@@ -6,12 +6,12 @@ logoOver = QPATHTOFOLDER(Pictures\antistasi_plus_logo.paa);
 logoSmall = QPATHTOFOLDER(Pictures\antistasi_plus_logo_small.paa);
 picture = QPATHTOFOLDER(Pictures\antistasi_plus_overview.paa);
 #else
-name = "Antistasi Plus";
+name = "Antistasi CISEF";
 #endif
-author = "Socrates";
+author = "Sebaa (But mostly all the people that built Antistasi)";
 description = "";
-tooltip = "Antistasi Plus";
-tooltipOwned = "Antistasi Plus";
+tooltip = "Antistasi CISEF";
+tooltipOwned = "Antistasi CISEF";
 overview = "<br/><t align='center' size='0.75'> An Arma 3 persistent multiplayer scenario about guerilla warfare tactics. Fork of Antistasi Community Version focused on expanding player's capabilities and introducing new gameplay features. </t><br/><br/>";
 actionName = "GitHub";
 action = "https://github.com/igorkis-scrts/A3-Antistasi-Plus";

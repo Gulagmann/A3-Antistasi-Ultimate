@@ -297,19 +297,19 @@
                 <Korean>우린 당신들같은 부류의 사람들이 아닙니다.</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_mapname_short_text">
-                <Original>Antistasi Plus - Horizon Islands</Original>
-                <Russian>Antistasi Plus - Острова Горизонта</Russian>
-                <Chinesesimp>Antistasi Plus - 地平线群岛</Chinesesimp>
+                <Original>Antistasi CISEF - Horizon Islands</Original>
+                <Russian>Antistasi CISEF - Острова Горизонта</Russian>
+                <Chinesesimp>Antistasi CISEF - 地平线群岛</Chinesesimp>
                 <Korean>안티스타시 플러스 - 호라이즌 제도</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_mapname_text">
-                <Original>Antistasi Plus - Horizon Islands</Original>
-                <Russian>Antistasi Plus - Острова Горизонта</Russian>
-                <Chinesesimp>Antistasi Plus - 地平线群岛</Chinesesimp>
+                <Original>Antistasi CISEF - Horizon Islands</Original>
+                <Russian>Antistasi CISEF - Острова Горизонта</Russian>
+                <Chinesesimp>Antistasi CISEF - 地平线群岛</Chinesesimp>
                 <Korean>안티스타시 플러스 - 호라이즌 제도</Korean>
             </Key>
             <Key ID="STR_antistasi_mission_info_tanoa_blurb_text">
-                <Original>A pack of old men in a job where people die young.</Original>
+                <Original>CISEF go wild and capture an island.</Original>
                 <Russian>Стая стариков там, где люди умирают молодыми.</Russian>
                 <Chinesesimp>一群老人从事英年早逝的工作。</Chinesesimp>
                 <Korean>사람들이 젊어서 죽는 직업의 노인들.</Korean>

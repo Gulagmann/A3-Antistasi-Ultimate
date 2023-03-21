@@ -128,6 +128,9 @@
                 <Chinesesimp>该派系在当前游戏设置中不可用。如果您想使用它，请检查您的 CDLC 或模组。\n所需的插件: %1</Chinesesimp>
                 <Korean>이 팩션은 현재 게임 설정에서 사용할 수 없습니다. 사용하길 원한다면 CDLC 와/나 모드를 확인하십시오.\n필요 애드온: %1</Korean>
             </Key>
+            <Key ID="STR_A3AP_setupFactionsTab_cisef">
+                <Original>CISEF Mercenaries.\nHighly trained and motivated by money.</Original>
+            </Key>
             <Key ID="STR_A3AP_setupFactionsTab_vanilla_generic">
                 <Original>Standard faction from base game.</Original>
                 <Russian>Стандартная фракция из базовой игры.</Russian>
