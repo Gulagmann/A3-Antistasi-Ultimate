@@ -54,6 +54,52 @@ private _weaponLootInfo = [
 	[allMissileLaunchers, unlockedMissileLaunchers, 2]
 ];
 
+private _fnc_isNIArmsItem = {
+    params ["_item"];
+    ((_item call HALs_fnc_getConfigClass) call A3a_fnc_getModOfConfigClass) == "@NIArms All In One (V14 Onwards)";
+};
+
+private _fnc_isCISEFItem = {
+    params["_item"];
+    (((_item call HALs_fnc_getConfigClass) call A3a_fnc_getModOfConfigClass) == "@CISEF_Beta") or (((_item call HALs_fnc_getConfigClass) call A3a_fnc_getModOfConfigClass) == "@CISEF");
+};
+
+//Unused for now
+private _fnc_classNameContainsCisefFilter = {
+    params ["_className"];
+    private _condition = false;
+    {
+        if((_x in (toLower(configName(_className call HALs_fnc_getConfigClass)))) and ((((_className call HALs_fnc_getConfigClass) call A3a_fnc_getModOfConfigClass) == "@CISEF_BETA") or (((_className call HALs_fnc_getConfigClass) call A3a_fnc_getModOfConfigClass) == "@CISEF"))) then {
+            _condition = true;
+        } else {
+            _condition = false;
+        };
+    } forEach _cisefFilter;
+    _condition;
+};
+
+private _fnc_removeNIArmsItems = {
+    params ["_arrayItems"];
+    _arrayItems select { !(_x call _fnc_isNIArmsItem)};
+};
+
+private _fnc_removeCisefItems = {
+    params ["_arrayItems"];
+    _arrayItems select { !(_x call _fnc_isCISEFItem)};
+};
+
+//Unused
+private _fnc_removeCisefItemsBasedOnFilter = {
+    params ["_arrayItems"];
+    _arrayItems select { !(_x call _fnc_classNameContainsCisefFilter)};
+};
+
+//Remove NiArms && Invalid CISEF Weapons from Weapon Loot
+{
+    _x set [0, ([(_x select 0)] call _fnc_removeNIArmsItems)];
+    _x set [0, ([(_x select 0)] call _fnc_removeCisefItems)];
+} forEach _weaponLootInfo;
+
 //Build the weighting array, as used by selectRandomWeighted
 private _weaponLootWeighting = [];
 {
@@ -174,6 +220,10 @@ if (_crateWepTypeMax != 0) then {
             Verbose_2("Adding %1 weapons of type %2", _amount, _loot);
 
 			private _magazines = compatibleMagazines _loot;
+
+			_magazines = [_magazines] call _fnc_removeCisefItems;
+            _magazines = [_magazines] call _fnc_removeNIArmsItems;
+
 			if (count _magazines < 1) exitWith {};
 			if (_loot in allShotguns) then { _magazines = [_magazines select 0] };		// prevent doomsday
 
@@ -207,6 +257,9 @@ if (_crateItemTypeMax != 0) then {
 		]
 	] select (tierWar < 3);
 
+    _itemLootLists = [_itemLootLists] call _fnc_removeCisefItems;
+    _itemLootLists = [_itemLootLists] call _fnc_removeNIArmsItems;
+
 	for "_i" from 0 to floor random _crateItemTypeMax do {
 		private _lootList = selectRandomWeighted _itemLootLists;
 		if (_lootList isEqualTo []) then { continue };
@@ -220,6 +273,10 @@ if (_crateItemTypeMax != 0) then {
 if (_crateAmmoTypeMax != 0) then {
 	for "_i" from 0 to floor random _crateAmmoTypeMax do {
 		_available = (lootMagazine - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Ammo Left in Loot List");
@@ -235,6 +292,10 @@ if (_crateAmmoTypeMax != 0) then {
 if (_crateExplosiveTypeMax != 0) then {
 	for "_i" from 0 to floor random _crateExplosiveTypeMax do {
 		_available = (lootExplosive - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Explosives Left in Loot List");
@@ -250,6 +311,10 @@ if (_crateExplosiveTypeMax != 0) then {
 if (_crateAttachmentTypeMax != 0) then {
 	for "_i" from 0 to (_crateAttachmentTypeMax call _fnc_pickNumberOfTypes) do {
 		_available = (lootAttachment - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Attachment Left in Loot List");
@@ -265,6 +330,10 @@ if (_crateAttachmentTypeMax != 0) then {
 if (_crateBackpackTypeMax != 0) then {
 	for "_i" from 0 to floor random _crateBackpackTypeMax do {
 		_available = (lootBackpack - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Backpacks Left in Loot List");
@@ -280,6 +349,10 @@ if (_crateBackpackTypeMax != 0) then {
 if (_crateHelmetTypeMax != 0) then {
 	for "_i" from 0 to floor random _crateHelmetTypeMax do {
 		_available = (lootHelmet - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Helmets Left in Loot List");
@@ -295,6 +368,10 @@ if (_crateHelmetTypeMax != 0) then {
 if (_crateVestTypeMax != 0) then {
 	for "_i" from 0 to floor random _crateVestTypeMax do {
 		_available = (lootVest - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Vests Left in Loot List");
@@ -310,6 +387,10 @@ if (_crateVestTypeMax != 0) then {
 if (_crateDeviceTypeMax != 0) then {
 	for "_i" from 0 to floor random _crateDeviceTypeMax do {
 		_available = (lootDevice - _unlocks - itemCargo _crate);
+
+		_available = [_available] call _fnc_removeCisefItems;
+        _available = [_available] call _fnc_removeNIArmsItems;
+
 		_loot = selectRandom _available;
 		if (isNil "_loot") then {
             Debug("No Device Bags Left in Loot List");
