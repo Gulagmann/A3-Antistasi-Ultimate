@@ -7719,11 +7719,10 @@ class cfgHALsStore
 		//
 		class handgunsCISEF : handgunsVanilla
 		{
-			displayName = "Handguns";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
-
             ITEM(hgun_Pistol_heavy_01_Black_F, 450, PISTOL_STOCK);
             ITEM(hgun_Pistol_heavy_01_Polished_F, 450, PISTOL_STOCK);
+
+			ITEM(hgun_Pistol_heavy_01_F, 450, PISTOL_STOCK);
 			ITEM(hgun_Pistol_heavy_01_green_F, 450, PISTOL_STOCK);
 			ITEM(hgun_ACPC2_F, 200, PISTOL_STOCK);
 			ITEM(hgun_P07_F, 150, PISTOL_STOCK);
@@ -7732,16 +7731,16 @@ class cfgHALsStore
 			ITEM(hgun_Pistol_heavy_02_F, 600, PISTOL_STOCK);
 		};
 
-		class smgCISEF : smgVanilla
+		class smgCISEF
 		{
-			displayName = "Submachine Guns";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+		    displayName = $STR_HALS_STORE_SMGS;
+            picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
 
-			ITEM(SMG_03C_TR_PinkToy, 350, RIFLE_STOCK);
 			ITEM(SMG_03C_TR_black, 350, RIFLE_STOCK);
 			ITEM(SMG_03C_TR_camo, 350, RIFLE_STOCK);
 			ITEM(SMG_03C_TR_hex, 350, RIFLE_STOCK);
 			ITEM(SMG_03C_TR_khaki, 350, RIFLE_STOCK);
+			ITEM(SMG_03C_TR_PinkToy, 350, RIFLE_STOCK);
 
 			ITEM(SMG_03C_black, 450, RIFLE_STOCK);
 			ITEM(SMG_03C_camo, 450, RIFLE_STOCK);
@@ -7764,18 +7763,14 @@ class cfgHALsStore
 
 		class riflesCISEF : riflesVanilla
 		{
-			displayName = "Assault Rifles";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-
             ITEM(cisef_AKM_Woodland_F, 700, RIFLE_STOCK);
+            ITEM(arifle_SDAR_F, 2000, RIFLE_STOCK);
 
             ITEM(hlc_rifle_SG550_RIS, 1100, RIFLE_STOCK);
             ITEM(hlc_rifle_SG550_TAC, 1200, RIFLE_STOCK);
             ITEM(hlc_rifle_SG550_TAC_GL, 1350, RIFLE_STOCK);
             ITEM(hlc_rifle_SG762SB_TAC, 1500, RIFLE_STOCK);
             ITEM(hlc_rifle_SG762LB_TAC, 1600, RIFLE_STOCK);
-
-            ITEM(arifle_SDAR_F, 2000, RIFLE_STOCK);
 
 			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
 
@@ -7858,8 +7853,7 @@ class cfgHALsStore
 
 		class mgCISEF : mgVanilla
 		{
-			displayName = "Machine Guns";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+			ITEM(LMG_Zafir_Woodland_F, 2900, RIFLE_STOCK);
 
 			ITEM(arifle_CTARS_blk_F, 1500, RIFLE_STOCK);
 			ITEM(arifle_CTARS_ghex_F, 1500, RIFLE_STOCK);
@@ -7882,7 +7876,6 @@ class cfgHALsStore
 			ITEM(arifle_RPK12_arid_F, 2500, RIFLE_STOCK);
 			ITEM(arifle_RPK12_lush_F, 2500, RIFLE_STOCK);
 
-			ITEM(LMG_Zafir_Woodland_F, 2900, RIFLE_STOCK);
 			ITEM(LMG_Zafir_F, 2900, RIFLE_STOCK);
 
 			ITEM(MMG_01_hex_F, 4500, 10);
@@ -7895,9 +7888,6 @@ class cfgHALsStore
 
 		class sniperRiflesCISEF : sniperRiflesVanilla
 		{
-			displayName = "DMRs, Sniper Rifles";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
-
 			ITEM(srifle_DMR_07_blk_F, 1450, RIFLE_STOCK);
 			ITEM(srifle_DMR_07_ghex_F, 1450, RIFLE_STOCK);
 			ITEM(srifle_DMR_07_hex_F, 1450, RIFLE_STOCK);
@@ -7950,11 +7940,9 @@ class cfgHALsStore
 
 		class launchersCISEF : launchersVanilla
 		{
-			displayName = "Launchers";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
-
-			ITEM(launch_RPG7_F, 650, 15);
 			ITEM(launch_RPG7_Woodland_F, 650, LAUNCHER_STOCK);
+
+            ITEM(launch_RPG7_F, 650, 15);
 
 			ITEM(launch_NLAW_F, 2000, LAUNCHER_STOCK);
 
@@ -7982,38 +7970,25 @@ class cfgHALsStore
 
 		class pointersCISEF : pointersVanilla
 		{
-			displayName = "Pointer Accessories";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
-
-			ITEM(acc_flashlight, 75, PN_STOCK);
-			ITEM(acc_flashlight_smg_01, 75, PN_STOCK);
-			ITEM(acc_pointer_IR, 100, PN_STOCK);
-			ITEM(acc_flashlight_pistol, 75, PN_STOCK);
 			ITEM(saber_light_ir_lxWS, 100, PN_STOCK);
 			ITEM(saber_light_ir_khaki_lxWS, 100, PN_STOCK);
 
+            ITEM(acc_flashlight, 75, PN_STOCK);
+			ITEM(acc_flashlight_smg_01, 75, PN_STOCK);
+			ITEM(acc_pointer_IR, 100, PN_STOCK);
+			ITEM(acc_flashlight_pistol, 75, PN_STOCK);
+
 		};
 
-		class navigationCISEF : navigationVanilla
+        class navigationCISEF
 		{
 			displayName = "Navigation";
 			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
-
-			ITEM(ItemGPS, 300, NN_STOCK);
-			ITEM(I_UavTerminal, 800, MISC_STOCK);
-			ITEM(O_UavTerminal, 800, MISC_STOCK);
-			ITEM(B_UavTerminal, 800, MISC_STOCK);
-
-			ITEM(ItemRadio, 45, NN_STOCK);
 
 			ITEM(CISEF_Rangefinder_Default, 400, NN_STOCK);
 			ITEM(CISEF_Rangefinder_Pacific, 400, NN_STOCK);
 			ITEM(CISEF_Designator_Default, 1200, NN_STOCK);
 			ITEM(CISEF_Designator_Pacific, 1200, NN_STOCK);
-
-			ITEM(NVGogglesB_blk_F, 5000, MISC_STOCK);
-			ITEM(NVGogglesB_grn_F, 5000, MISC_STOCK);
-			ITEM(NVGogglesB_gry_F, 5000, MISC_STOCK);
 
 			ITEM(CISEF_NVG_Nvg_None_Pacific , 1000, NN_STOCK);
 			ITEM(CISEF_NVG_Nvg_Peltor_Pacific , 1000, NN_STOCK);
@@ -8042,12 +8017,23 @@ class cfgHALsStore
 			ITEM(CISEF_NVG_Cos_G_K_Headset_Pacific , 50, NN_STOCK);
 
 			ITEM(CISEF_NVG_CosH_None_Pacific, 50, NN_STOCK);
+
+			ITEM(ItemGPS, 300, NN_STOCK);
+			ITEM(I_UavTerminal, 800, MISC_STOCK);
+			ITEM(O_UavTerminal, 800, MISC_STOCK);
+			ITEM(B_UavTerminal, 800, MISC_STOCK);
+
+			ITEM(ItemRadio, 45, NN_STOCK);
+
+            ITEM(NVGogglesB_blk_F, 5000, MISC_STOCK);
+			ITEM(NVGogglesB_grn_F, 5000, MISC_STOCK);
+			ITEM(NVGogglesB_gry_F, 5000, MISC_STOCK);
 		};
 
 		class vestsCISEF
 		{
 			displayName = "Vests"
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\vest_ca.paa";
 
 			ITEM(CISEF_V_Tacticalvest_Empty_Pacific, 300, MISC_STOCK);
 			ITEM(CISEF_V_Tacticalvest_Empty_Pacific_S, 300, MISC_STOCK);
@@ -8146,7 +8132,7 @@ class cfgHALsStore
 		class headgearCISEF
 		{
 			displayName = "Headgear"
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\headgear_ca.paa";
 
 			ITEM(CISEF_H_CrewHelmet, 300, MISC_STOCK);
 			ITEM(CISEF_H_CrewHelmetF, 300, MISC_STOCK);
@@ -8193,24 +8179,6 @@ class cfgHALsStore
 
 		class miscCISEF : miscVanilla
 		{
-			displayName = "Misc";
-			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
-
-			ITEM(IEDUrbanSmall_Remote_Mag, 500, MISC_STOCK);
-			ITEM(IEDLandSmall_Remote_Mag, 500, MISC_STOCK);
-			ITEM(IEDLandBig_Remote_Mag, 750, MISC_STOCK);
-			ITEM(IEDUrbanBig_Remote_Mag, 750, MISC_STOCK);
-
-			ITEM(APERSMineDispenser_Mag, 400, MISC_STOCK);
-			ITEM(ClaymoreDirectionalMine_Remote_Mag, 300, MISC_STOCK);
-			ITEM(DemoCharge_Remote_Mag, 250, MISC_STOCK);
-			ITEM(SatchelCharge_Remote_Mag, 500, MISC_STOCK);
-			ITEM(SLAMDirectionalMine_Wire_Mag, 400, MISC_STOCK);
-			ITEM(ATMine_Range_Mag, 200, MISC_STOCK);
-			ITEM(APERSMine_Range_Mag, 200, MISC_STOCK);
-			ITEM(APERSBoundingMine_Range_Mag, 150, MISC_STOCK);
-			ITEM(APERSTripMine_Wire_Mag, 100, MISC_STOCK);
-
             ITEM(CISEF_B_MS_Pacific, 1200, MISC_STOCK);
 
             ITEM(CISEF_U_A1_GIL_Pacific, 1000, MISC_STOCK);
@@ -8229,6 +8197,21 @@ class cfgHALsStore
 
 			ITEM(CISEF_B_CUR_Pacific, 200, MISC_STOCK);
 			ITEM(CISEF_B_CUR_Pacific_S, 200, MISC_STOCK);
+
+            ITEM(IEDUrbanSmall_Remote_Mag, 500, MISC_STOCK);
+			ITEM(IEDLandSmall_Remote_Mag, 500, MISC_STOCK);
+			ITEM(IEDLandBig_Remote_Mag, 750, MISC_STOCK);
+			ITEM(IEDUrbanBig_Remote_Mag, 750, MISC_STOCK);
+
+			ITEM(APERSMineDispenser_Mag, 400, MISC_STOCK);
+			ITEM(ClaymoreDirectionalMine_Remote_Mag, 300, MISC_STOCK);
+			ITEM(DemoCharge_Remote_Mag, 250, MISC_STOCK);
+			ITEM(SatchelCharge_Remote_Mag, 500, MISC_STOCK);
+			ITEM(SLAMDirectionalMine_Wire_Mag, 400, MISC_STOCK);
+			ITEM(ATMine_Range_Mag, 200, MISC_STOCK);
+			ITEM(APERSMine_Range_Mag, 200, MISC_STOCK);
+			ITEM(APERSBoundingMine_Range_Mag, 150, MISC_STOCK);
+			ITEM(APERSTripMine_Wire_Mag, 100, MISC_STOCK);
 		};
 	};
 
