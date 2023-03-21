@@ -6,6 +6,27 @@ class Templates
         description = "";
     };
 
+    // ************************************** CISEF *******************************************************
+
+    class CISEF_Base : Base
+    {
+        requiredAddons[] = {"cisef_core"};
+        logo = "\cisef_core\data\insignia\CISEF.paa";
+        basepath = QPATHTOFOLDER(Templates\Templates\CISEF); //the path to the template folder
+        priority = 2;
+        equipFlags[] = {"vanilla"};
+        description = $STR_A3AP_setupFactionsTab_cisef;
+    };
+
+    class CISEF_Pacific : CISEF_Base
+    {
+        file = "CISEF_Reb_Pacific";
+        climate[] = {"tropical"};
+        side = "Reb";
+        name = "CISEF";
+        flagTexture = "\cisef_core\data\Flag_CISEF.paa";
+    }
+
     // ************************************** Western Sahara *******************************************************
 
     class WS_Base : Base
