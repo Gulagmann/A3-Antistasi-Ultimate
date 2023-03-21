@@ -16,6 +16,10 @@ params ["_traderX"];
 private _templateParts = A3A_Reb_template splitString "_";
 
 switch (true) do {
+    case ("CISEF" isEqualTo (_templateParts select 0)): {
+            Info("Initializing CISEF trader.");
+            [_traderX, "cisef"] call HALs_store_fnc_addTrader;
+    };
     case ("VN" isEqualTo (_templateParts select 0)): {
         Info("Initializing RHS trader.");
         [_traderX, "vn"] call HALs_store_fnc_addTrader;

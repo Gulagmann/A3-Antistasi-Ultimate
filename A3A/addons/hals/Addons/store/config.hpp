@@ -7713,6 +7713,523 @@ class cfgHALsStore
 			ITEM(DemoCharge_Remote_Mag, 250, MISC_STOCK);
 			ITEM(SatchelCharge_Remote_Mag, 500, MISC_STOCK);
 		};
+
+        //
+		//    CISEF
+		//
+		class handgunsCISEF : handgunsVanilla
+		{
+			displayName = "Handguns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\handgun_ca.paa";
+
+            ITEM(hgun_Pistol_heavy_01_Black_F, 450, PISTOL_STOCK);
+            ITEM(hgun_Pistol_heavy_01_Polished_F, 450, PISTOL_STOCK);
+			ITEM(hgun_Pistol_heavy_01_green_F, 450, PISTOL_STOCK);
+			ITEM(hgun_ACPC2_F, 200, PISTOL_STOCK);
+			ITEM(hgun_P07_F, 150, PISTOL_STOCK);
+			ITEM(hgun_P07_khk_F, 150, PISTOL_STOCK);
+			ITEM(hgun_Rook40_F, 150, PISTOL_STOCK);
+			ITEM(hgun_Pistol_heavy_02_F, 600, PISTOL_STOCK);
+		};
+
+		class smgCISEF : smgVanilla
+		{
+			displayName = "Submachine Guns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(SMG_03C_TR_PinkToy, 350, RIFLE_STOCK);
+			ITEM(SMG_03C_TR_black, 350, RIFLE_STOCK);
+			ITEM(SMG_03C_TR_camo, 350, RIFLE_STOCK);
+			ITEM(SMG_03C_TR_hex, 350, RIFLE_STOCK);
+			ITEM(SMG_03C_TR_khaki, 350, RIFLE_STOCK);
+
+			ITEM(SMG_03C_black, 450, RIFLE_STOCK);
+			ITEM(SMG_03C_camo, 450, RIFLE_STOCK);
+			ITEM(SMG_03C_hex, 450, RIFLE_STOCK);
+			ITEM(SMG_03C_khaki, 450, RIFLE_STOCK);
+
+			ITEM(SMG_03_TR_black, 325, RIFLE_STOCK);
+			ITEM(SMG_03_TR_camo, 325, RIFLE_STOCK);
+			ITEM(SMG_03_TR_hex, 325, RIFLE_STOCK);
+			ITEM(SMG_03_TR_khaki, 325, RIFLE_STOCK);
+
+			ITEM(SMG_03_black, 425, RIFLE_STOCK);
+			ITEM(SMG_03_camo, 425, RIFLE_STOCK);
+			ITEM(SMG_03_hex, 425, RIFLE_STOCK);
+			ITEM(SMG_03_khaki, 425, RIFLE_STOCK);
+
+			ITEM(SMG_05_F, 200, RIFLE_STOCK);
+			ITEM(SMG_01_F, 200, RIFLE_STOCK);
+		};
+
+		class riflesCISEF : riflesVanilla
+		{
+			displayName = "Assault Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+            ITEM(cisef_AKM_Woodland_F, 700, RIFLE_STOCK);
+
+            ITEM(hlc_rifle_SG550_RIS, 1100, RIFLE_STOCK);
+            ITEM(hlc_rifle_SG550_TAC, 1200, RIFLE_STOCK);
+            ITEM(hlc_rifle_SG550_TAC_GL, 1350, RIFLE_STOCK);
+            ITEM(hlc_rifle_SG762SB_TAC, 1500, RIFLE_STOCK);
+            ITEM(hlc_rifle_SG762LB_TAC, 1600, RIFLE_STOCK);
+
+            ITEM(arifle_SDAR_F, 2000, RIFLE_STOCK);
+
+			ITEM(arifle_AKS_F, 250, RIFLE_STOCK);
+
+			ITEM(arifle_Mk20_plain_F, 700, RIFLE_STOCK);
+			ITEM(arifle_Mk20C_plain_F, 550, RIFLE_STOCK);
+			ITEM(arifle_Mk20_GL_plain_F, 850, RIFLE_STOCK);
+
+			ITEM(arifle_TRG21_F, 600, RIFLE_STOCK);
+			ITEM(arifle_TRG20_F, 500, RIFLE_STOCK);
+			ITEM(arifle_TRG21_GL_F, 750, RIFLE_STOCK);
+
+			ITEM(arifle_AKM_F, 700, RIFLE_STOCK);
+
+			ITEM(arifle_Katiba_F, 1000, RIFLE_STOCK);
+			ITEM(arifle_Katiba_C_F, 950, RIFLE_STOCK);
+			ITEM(arifle_Katiba_GL_F, 1150, RIFLE_STOCK);
+
+			ITEM(arifle_CTAR_blk_F, 800, RIFLE_STOCK);
+			ITEM(arifle_CTAR_GL_blk_F, 950, RIFLE_STOCK);
+
+			ITEM(arifle_CTAR_ghex_F, 800, RIFLE_STOCK);
+			ITEM(arifle_CTAR_GL_ghex_F, 950, RIFLE_STOCK);
+
+			ITEM(arifle_CTAR_hex_F, 800, RIFLE_STOCK);
+			ITEM(arifle_CTAR_GL_hex_F, 950, RIFLE_STOCK);
+
+			ITEM(arifle_MX_F, 1250, RIFLE_STOCK);
+			ITEM(arifle_MXC_F, 1200, RIFLE_STOCK);
+			ITEM(arifle_MX_GL_F, 1400, RIFLE_STOCK);
+
+			ITEM(arifle_MX_Black_F, 1250, RIFLE_STOCK);
+			ITEM(arifle_MXC_Black_F, 1200, RIFLE_STOCK);
+			ITEM(arifle_MX_GL_Black_F, 1400, RIFLE_STOCK);
+
+			ITEM(arifle_MX_khk_F, 1250, RIFLE_STOCK);
+			ITEM(arifle_MXC_khk_F, 1200, RIFLE_STOCK);
+			ITEM(arifle_MX_GL_khk_F, 1400, RIFLE_STOCK);
+
+			ITEM(arifle_MSBS65_F, 2150, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_UBS_F, 2250, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_GL_F, 2350, RIFLE_STOCK);
+
+			ITEM(arifle_MSBS65_black_F, 1200, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_UBS_black_F, 1400, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_GL_black_F, 1500, RIFLE_STOCK);
+
+			ITEM(arifle_MSBS65_camo_F, 1200, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_UBS_camo_F, 1400, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_GL_camo_F, 1500, RIFLE_STOCK);
+
+			ITEM(arifle_MSBS65_sand_F, 1200, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_UBS_sand_F, 1400, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_GL_sand_F, 1500, RIFLE_STOCK);
+
+			ITEM(arifle_SPAR_01_blk_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_SPAR_01_GL_blk_F, 1650, RIFLE_STOCK);
+
+			ITEM(arifle_SPAR_01_khk_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_SPAR_01_GL_khk_F, 1650, RIFLE_STOCK);
+
+			ITEM(arifle_SPAR_01_snd_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_SPAR_01_GL_snd_F, 1650, RIFLE_STOCK);
+
+			ITEM(arifle_AK12U_F, 2300, RIFLE_STOCK);
+			ITEM(arifle_AK12_F, 2400, RIFLE_STOCK);
+			ITEM(arifle_AK12_GL_F, 2550, RIFLE_STOCK);
+
+			ITEM(arifle_AK12U_arid_F, 2300, RIFLE_STOCK);
+			ITEM(arifle_AK12_arid_F, 2400, RIFLE_STOCK);
+			ITEM(arifle_AK12_GL_arid_F, 2550, RIFLE_STOCK);
+
+			ITEM(arifle_AK12U_lush_F, 2300, RIFLE_STOCK);
+			ITEM(arifle_AK12_lush_F, 2400, RIFLE_STOCK);
+			ITEM(arifle_AK12_GL_lush_F, 2550, RIFLE_STOCK);
+
+			ITEM(arifle_ARX_blk_F, 4000, RIFLE_STOCK);
+			ITEM(arifle_ARX_ghex_F, 4000, RIFLE_STOCK);
+			ITEM(arifle_ARX_hex_F, 4000, RIFLE_STOCK);
+		};
+
+		class mgCISEF : mgVanilla
+		{
+			displayName = "Machine Guns";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(arifle_CTARS_blk_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_CTARS_ghex_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_CTARS_hex_F, 1500, RIFLE_STOCK);
+
+			ITEM(arifle_MX_SW_F, 1600, RIFLE_STOCK);
+			ITEM(arifle_MX_SW_Black_F, 1600, RIFLE_STOCK);
+			ITEM(arifle_MX_SW_khk_F, 1600, RIFLE_STOCK);
+
+			ITEM(arifle_SPAR_02_blk_F, 1600, RIFLE_STOCK);
+			ITEM(arifle_SPAR_02_khk_F, 1600, RIFLE_STOCK);
+			ITEM(arifle_SPAR_02_snd_F, 1600, RIFLE_STOCK);
+
+			ITEM(LMG_03_F, 1250, RIFLE_STOCK);
+
+			ITEM(LMG_Mk200_F, 1850, RIFLE_STOCK);
+			ITEM(LMG_Mk200_black_F, 1850, RIFLE_STOCK);
+
+			ITEM(arifle_RPK12_F, 2500, RIFLE_STOCK);
+			ITEM(arifle_RPK12_arid_F, 2500, RIFLE_STOCK);
+			ITEM(arifle_RPK12_lush_F, 2500, RIFLE_STOCK);
+
+			ITEM(LMG_Zafir_Woodland_F, 2900, RIFLE_STOCK);
+			ITEM(LMG_Zafir_F, 2900, RIFLE_STOCK);
+
+			ITEM(MMG_01_hex_F, 4500, 10);
+			ITEM(MMG_01_tan_F, 4500, 10);
+
+			ITEM(MMG_02_black_F, 4500, 10);
+			ITEM(MMG_02_camo_F, 4500, 10);
+			ITEM(MMG_02_sand_F, 4500, 10);
+		};
+
+		class sniperRiflesCISEF : sniperRiflesVanilla
+		{
+			displayName = "DMRs, Sniper Rifles";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\primaryWeapon_ca.paa";
+
+			ITEM(srifle_DMR_07_blk_F, 1450, RIFLE_STOCK);
+			ITEM(srifle_DMR_07_ghex_F, 1450, RIFLE_STOCK);
+			ITEM(srifle_DMR_07_hex_F, 1450, RIFLE_STOCK);
+
+			ITEM(arifle_MXM_F, 1600, RIFLE_STOCK);
+			ITEM(arifle_MXM_Black_F, 1600, RIFLE_STOCK);
+			ITEM(arifle_MXM_khk_F, 1600, RIFLE_STOCK);
+
+			ITEM(arifle_MSBS65_Mark_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_Mark_black_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_Mark_camo_F, 1500, RIFLE_STOCK);
+			ITEM(arifle_MSBS65_Mark_sand_F, 1500, RIFLE_STOCK);
+
+			ITEM(srifle_DMR_01_F, 2200, RIFLE_STOCK);
+
+			ITEM(srifle_DMR_06_hunter_F, 2000, RIFLE_STOCK);
+			ITEM(srifle_DMR_06_camo_F, 2150, RIFLE_STOCK);
+			ITEM(srifle_DMR_06_olive_F, 2150, RIFLE_STOCK);
+
+			ITEM(srifle_DMR_03_F, 2500, RIFLE_STOCK);
+			ITEM(srifle_DMR_03_multicam_F, 2500, RIFLE_STOCK);
+			ITEM(srifle_DMR_03_khaki_F, 2500, RIFLE_STOCK);
+			ITEM(srifle_DMR_03_tan_F, 2500, RIFLE_STOCK);
+			ITEM(srifle_DMR_03_woodland_F, 2500, RIFLE_STOCK);
+
+			ITEM(srifle_EBR_F, 2550, RIFLE_STOCK);
+
+			ITEM(arifle_SPAR_03_blk_F, 1800, RIFLE_STOCK);
+			ITEM(arifle_SPAR_03_khk_F, 1800, RIFLE_STOCK);
+			ITEM(arifle_SPAR_03_snd_F, 1800, RIFLE_STOCK);
+
+			ITEM(srifle_DMR_02_F, 4250, 10);
+			ITEM(srifle_DMR_02_camo_F, 4250, 10);
+			ITEM(srifle_DMR_02_sniper_F, 4250, 10);
+
+			ITEM(srifle_DMR_05_blk_F, 4200, 10);
+			ITEM(srifle_DMR_05_hex_F, 4200, 10);
+			ITEM(srifle_DMR_05_tan_f, 4200, 10);
+
+			ITEM(srifle_DMR_04_F, 4500, 10);
+
+			ITEM(srifle_LRR_F, 4000, 5);
+			ITEM(srifle_LRR_tna_F, 4000, 5);
+			ITEM(srifle_LRR_camo_F, 4000, 5);
+
+			ITEM(srifle_GM6_F, 4500, 5);
+			ITEM(srifle_GM6_camo_F, 4500, 5);
+			ITEM(srifle_GM6_ghex_F, 4500, 5);
+		};
+
+		class launchersCISEF : launchersVanilla
+		{
+			displayName = "Launchers";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\secondaryWeapon_ca.paa";
+
+			ITEM(launch_RPG7_F, 650, 15);
+			ITEM(launch_RPG7_Woodland_F, 650, LAUNCHER_STOCK);
+
+			ITEM(launch_NLAW_F, 2000, LAUNCHER_STOCK);
+
+			ITEM(launch_RPG32_F, 1250, LAUNCHER_STOCK);
+			ITEM(launch_RPG32_green_F, 1250, LAUNCHER_STOCK);
+			ITEM(launch_RPG32_ghex_F, 1250, LAUNCHER_STOCK);
+
+			ITEM(launch_MRAWS_olive_F, 1400, LAUNCHER_STOCK);
+			ITEM(launch_MRAWS_olive_rail_F, 1100, LAUNCHER_STOCK);
+			ITEM(launch_MRAWS_green_F, 1400, LAUNCHER_STOCK);
+			ITEM(launch_MRAWS_green_rail_F, 1100, LAUNCHER_STOCK);
+			ITEM(launch_MRAWS_sand_F, 1400, LAUNCHER_STOCK);
+			ITEM(launch_MRAWS_sand_rail_F, 1100, LAUNCHER_STOCK);
+
+			ITEM(launch_O_Vorona_brown_F, 2500, LAUNCHER_STOCK);
+			ITEM(launch_O_Vorona_green_F, 2500, LAUNCHER_STOCK);
+
+			ITEM(launch_B_Titan_F, 3500, 3);
+			ITEM(launch_I_Titan_F, 3500, 3);
+			ITEM(launch_O_Titan_F, 3500, 3);
+			ITEM(launch_B_Titan_short_F, 3250, 3);
+			ITEM(launch_I_Titan_short_F, 3250, 3);
+			ITEM(launch_O_Titan_short_F, 3250, 3);
+		};
+
+		class pointersCISEF : pointersVanilla
+		{
+			displayName = "Pointer Accessories";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\itemAcc_ca.paa";
+
+			ITEM(acc_flashlight, 75, PN_STOCK);
+			ITEM(acc_flashlight_smg_01, 75, PN_STOCK);
+			ITEM(acc_pointer_IR, 100, PN_STOCK);
+			ITEM(acc_flashlight_pistol, 75, PN_STOCK);
+			ITEM(saber_light_ir_lxWS, 100, PN_STOCK);
+			ITEM(saber_light_ir_khaki_lxWS, 100, PN_STOCK);
+
+		};
+
+		class navigationCISEF : navigationVanilla
+		{
+			displayName = "Navigation";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\compass_ca.paa";
+
+			ITEM(ItemGPS, 300, NN_STOCK);
+			ITEM(I_UavTerminal, 800, MISC_STOCK);
+			ITEM(O_UavTerminal, 800, MISC_STOCK);
+			ITEM(B_UavTerminal, 800, MISC_STOCK);
+
+			ITEM(ItemRadio, 45, NN_STOCK);
+
+			ITEM(CISEF_Rangefinder_Default, 400, NN_STOCK);
+			ITEM(CISEF_Rangefinder_Pacific, 400, NN_STOCK);
+			ITEM(CISEF_Designator_Default, 1200, NN_STOCK);
+			ITEM(CISEF_Designator_Pacific, 1200, NN_STOCK);
+
+			ITEM(NVGogglesB_blk_F, 5000, MISC_STOCK);
+			ITEM(NVGogglesB_grn_F, 5000, MISC_STOCK);
+			ITEM(NVGogglesB_gry_F, 5000, MISC_STOCK);
+
+			ITEM(CISEF_NVG_Nvg_None_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_Peltor_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_Headset_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_G_None_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_G_Peltor_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_G_Headset_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_K_None_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_K_Peltor_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_K_Headset_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_G_K_None_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_G_K_Peltor_Pacific , 1000, NN_STOCK);
+			ITEM(CISEF_NVG_Nvg_G_K_Headset_Pacific , 1000, NN_STOCK);
+
+			ITEM(CISEF_NVG_Cos_None_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_Peltor_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_Headset_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_G_None_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_G_Peltor_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_G_Headset_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_K_None_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_K_Peltor_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_K_Headset_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_G_K_None_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_G_K_Peltor_Pacific , 50, NN_STOCK);
+			ITEM(CISEF_NVG_Cos_G_K_Headset_Pacific , 50, NN_STOCK);
+
+			ITEM(CISEF_NVG_CosH_None_Pacific, 50, NN_STOCK);
+		};
+
+		class vestsCISEF
+		{
+			displayName = "Vests"
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(CISEF_V_Tacticalvest_Empty_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Empty_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Empty_H_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Empty_H_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var1_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var1_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var1_H_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var1_H_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var2_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var2_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var2_H_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var2_H_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var3_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var3_Pacific_S, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var3_H_Pacific, 300, MISC_STOCK);
+			ITEM(CISEF_V_Tacticalvest_Var3_H_Pacific_S, 300, MISC_STOCK);
+
+			ITEM(CISEF_V_VSM_Fapc_Empty_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Empty_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Empty_H_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Empty_H_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var1_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var1_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var1_H_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var1_H_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var2_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var2_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var2_H_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var2_H_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var3_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var3_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var3_H_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var3_H_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var4_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var4_Pacific_S, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var4_H_Pacific, 800, MISC_STOCK);
+			ITEM(CISEF_V_VSM_Fapc_Var4_H_Pacific_S, 800, MISC_STOCK);
+
+			ITEM(CISEF_V_VSM_LBT6094_Empty_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Empty_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Empty_H_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Empty_H_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var1_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var1_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var1_H_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var1_H_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var2_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var2_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var2_H_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var2_H_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var3_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var3_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var3_H_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var3_H_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var4_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var4_Pacific_S, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var4_H_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_V_VSM_LBT6094_Var4_H_Pacific_S, 1250, MISC_STOCK);
+
+			ITEM(CISEF_V_Platecarrier_Empty_Pacific, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Empty_Pacific_S, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Empty_H_Pacific, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Empty_H_Pacific_S, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var1_Pacific, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var1_Pacific_S, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var1_H_Pacific, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var1_H_Pacific_S, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var2_Pacific, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var2_Pacific_S, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var2_H_Pacific, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var2_H_Pacific_S, 1300, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var3_Pacific, 1400, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var3_Pacific_S, 1400, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var3_H_Pacific, 1400, MISC_STOCK);
+			ITEM(CISEF_V_Platecarrier_Var3_H_Pacific_S, 1400, MISC_STOCK);
+
+			ITEM(CISEF_V_Divingvest_Var1_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var1_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var1_H_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var1_H_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var2_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var2_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var2_H_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var2_H_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var3_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var3_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var3_H_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var3_H_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var4_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var4_Pacific_S, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var4_H_Pacific, 600 , MISC_STOCK);
+			ITEM(CISEF_V_Divingvest_Var4_H_Pacific_S, 600 , MISC_STOCK);
+	    };
+
+		class headgearCISEF
+		{
+			displayName = "Headgear"
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(CISEF_H_CrewHelmet, 300, MISC_STOCK);
+			ITEM(CISEF_H_CrewHelmetF, 300, MISC_STOCK);
+
+			ITEM(CISEF_H_HeliCrew_V_Pacific, 500, MISC_STOCK);
+
+			ITEM(CISEF_H_PASGT_Pacific, 400, MISC_STOCK);
+			ITEM(CISEF_H_PASGT_G_Pacific, 400, MISC_STOCK);
+			ITEM(CISEF_H_PASGT_M_Pacific, 400, MISC_STOCK);
+			ITEM(CISEF_H_PASGT_S_Pacific, 400, MISC_STOCK);
+			ITEM(CISEF_H_PASGT_S_G_Pacific, 400, MISC_STOCK);
+			ITEM(CISEF_H_PASGT_S_M_Pacific, 400, MISC_STOCK);
+
+			ITEM(CISEF_H_ACH_SD_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_SD_C_L_S_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_SD_M_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_H_ACH_S_SD_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_S_SD_C_L_S_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_S_SD_M_Pacific, 1250, MISC_STOCK);
+
+			ITEM(CISEF_H_ACH_HC_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_HC_C_L_S_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_S_HC_Pacific, 1000, MISC_STOCK);
+			ITEM(CISEF_H_ACH_S_HC_C_L_S_Pacific, 1000, MISC_STOCK);
+
+			ITEM(CISEF_H_ACH_SD_AntiThermal, 1250, MISC_STOCK);
+			ITEM(CISEF_H_ACH_SD_C_L_S_AntiThermal, 1250, MISC_STOCK);
+	    };
+
+		class backpacksCISEF
+		{
+			displayName = "Backpacks"
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(CISEF_B_Bergenbag_Pacific, 600, MISC_STOCK);
+			ITEM(CISEF_B_Bergenbag_Pacific_S, 600, MISC_STOCK);
+
+			ITEM(CISEF_B_Kitbag_Pacific, 400, MISC_STOCK);
+			ITEM(CISEF_B_Kitbag_Pacific_S, 400, MISC_STOCK);
+
+			ITEM(CISEF_B_Radiobag_Pacific, 500, MISC_STOCK);
+			ITEM(CISEF_B_Radiobag_Pacific_S, 500, MISC_STOCK);
+	    };
+
+		class miscCISEF : miscVanilla
+		{
+			displayName = "Misc";
+			picture = "a3\ui_f\data\gui\Rsc\RscDisplayArsenal\backpack_ca.paa";
+
+			ITEM(IEDUrbanSmall_Remote_Mag, 500, MISC_STOCK);
+			ITEM(IEDLandSmall_Remote_Mag, 500, MISC_STOCK);
+			ITEM(IEDLandBig_Remote_Mag, 750, MISC_STOCK);
+			ITEM(IEDUrbanBig_Remote_Mag, 750, MISC_STOCK);
+
+			ITEM(APERSMineDispenser_Mag, 400, MISC_STOCK);
+			ITEM(ClaymoreDirectionalMine_Remote_Mag, 300, MISC_STOCK);
+			ITEM(DemoCharge_Remote_Mag, 250, MISC_STOCK);
+			ITEM(SatchelCharge_Remote_Mag, 500, MISC_STOCK);
+			ITEM(SLAMDirectionalMine_Wire_Mag, 400, MISC_STOCK);
+			ITEM(ATMine_Range_Mag, 200, MISC_STOCK);
+			ITEM(APERSMine_Range_Mag, 200, MISC_STOCK);
+			ITEM(APERSBoundingMine_Range_Mag, 150, MISC_STOCK);
+			ITEM(APERSTripMine_Wire_Mag, 100, MISC_STOCK);
+
+            ITEM(CISEF_B_MS_Pacific, 1200, MISC_STOCK);
+
+            ITEM(CISEF_U_A1_GIL_Pacific, 1000, MISC_STOCK);
+            ITEM(CISEF_U_A1_SGIL_Pacific, 1000, MISC_STOCK);
+
+            ITEM(CISEF_U_A2_AntiThermal, 500, MISC_STOCK);
+
+            ITEM(CISEF_U_CBRN_Pacific, 500, MISC_STOCK);
+            ITEM(CISEF_U_CBRN_S_Pacific, 500, MISC_STOCK);
+
+			ITEM(CISEF_U_Diving_Pacific, 500, MISC_STOCK);
+			ITEM(CISEF_U_Diving_S_Pacific, 500, MISC_STOCK);
+
+			ITEM(CISEF_G_Respirator_Pacific, 200, MISC_STOCK);
+			ITEM(CISEF_G_Respirator_T_Pacific, 200, MISC_STOCK);
+
+			ITEM(CISEF_B_CUR_Pacific, 200, MISC_STOCK);
+			ITEM(CISEF_B_CUR_Pacific_S, 200, MISC_STOCK);
+		};
 	};
 
 	class stores 
@@ -7737,6 +8254,30 @@ class cfgHALsStore
 				"miscVanilla"
 			};
 		};
+
+        class cisef
+        {
+        	displayName = "Arms Dealer Store";
+        	categories[] = {
+        		"handgunsCISEF",
+        		"launchersCISEF",
+        		"riflesCISEF",
+        		"sniperRiflesCISEF",
+        		"mgCISEF",
+        		"smgCISEF",
+        		"launcherMagazinesVanilla",
+        		"magazinesVanilla",
+        		"opticsVanilla",
+        		"muzzlesVanilla",
+        		"underbarrelVanilla",
+        		"pointersCISEF",
+        		"navigationCISEF",
+        		"vestsCISEF",
+        		"headgearCISEF",
+        		"backpacksCISEF",
+        		"miscCISEF"
+        	};
+        };
 
 		class ws 
 		{
