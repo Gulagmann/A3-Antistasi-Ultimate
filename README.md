@@ -1,15 +1,9 @@
 <div align="center">
-  <img alt="Antistasi Plus" width="200" heigth="200" src="https://user-images.githubusercontent.com/6746043/206381805-43f2a69a-2754-49f3-95e2-aeaad8a4cee3.png">
-  <h1>Antistasi Plus</h1>
+  <h1>Antistasi CISEF</h1>
   <p>
     <i>An Arma 3 persistent multiplayer scenario about guerilla warfare tactics.</i>
     <br/>
-    <i>Fork of Antistasi Community Version focused on expanding player's capabilities and introducing new gameplay features.</i>
-  </p>
-  <p>
-    <a href="https://github.com/igorkis-scrts/A3-Antistasi-Plus/releases/latest">
-        <img src="https://img.shields.io/badge/Current_Stable_Version-2.1.10-red" alt="Antistasi Plus Version">
-    </a>
+    <i>Fork of Antistasi Plus modified for use by CISEF.</i>
   </p>
 </div>
 
@@ -45,6 +39,8 @@
 - DRO by mbrdmn
 - Discord Rich Presence by ConnorAU 
 - Antistasi Plus fork by Socrates
+- CISEF by Boris
+- Antistasi CISEF fork by Sebaa
 
 ## Additional Icons Credits
 <div>
