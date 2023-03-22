@@ -5,7 +5,10 @@ FIX_LINE_NUMBERS()
 #define DURATION 4
 
 private _credits = [
-	[ (call SCRT_fnc_misc_getMissionTitle), [QUOTE(VERSION)], "<img image='Pictures\Mission\logo.paa' size='1.6' />"],
+	[ "Antistasi CISEF - Horizon Islands", [QUOTE(VERSION)], "<img image='Pictures\Mission\logo.paa' size='1.6' />"],
+	[ "Antistasi CISEF Author:", ["Sebaa"]],
+	[ "CISEF Author:", ["Boris"]],
+	[ "Server provided by:", ["Jon", "Azuki"]],
 	[ (localize "STR_antistasi_credits_authors_plus"), ["Socrates"]],
 	[ (localize "STR_antistasi_credits_authors"), ["Barbolani","Official Antistasi Community"]]
 ];
