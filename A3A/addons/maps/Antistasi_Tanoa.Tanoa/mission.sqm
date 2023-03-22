@@ -147,7 +147,7 @@ dlcs[]=
 randomSeed=11834268;
 class ScenarioData
 {
-	author="Sebaa (But mostly all the people that built Antistasi)";
+	author="Sebaa (And all the people that built Antistasi)";
 };
 class Mission
 {

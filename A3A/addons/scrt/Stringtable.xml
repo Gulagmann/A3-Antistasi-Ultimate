@@ -6843,10 +6843,10 @@
                 <Korean>안티스타시 제작자:</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_generic_author_text">
-                <Original>Socrates</Original>
-                <Russian>Socrates</Russian>
-                <Chinesesimp>Socrates</Chinesesimp>
-                <Korean>Socrates</Korean>
+                <Original>Sebaa (And all the people that built Antistasi)</Original>
+                <Russian>Sebaa</Russian>
+                <Chinesesimp>Sebaa</Chinesesimp>
+                <Korean>Sebaa</Korean>
             </Key>
             <Key ID="STR_antistasi_credits_cw_mode">
                 <Original>Cold War Mode</Original>
