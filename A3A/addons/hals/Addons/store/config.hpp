@@ -7765,6 +7765,9 @@ class cfgHALsStore
 		{
             ITEM(cisef_AKM_Woodland_F, 700, RIFLE_STOCK);
             ITEM(arifle_SDAR_F, 2000, RIFLE_STOCK);
+            ITEM(cisef_SPAR_01_Woodland_F, 1500, RIFLE_STOCK);
+            ITEM(cisef_SPAR_01_GL_Woodland_F, 1650, RIFLE_STOCK);
+            ITEM(cisef_SPAR_02_Woodland_F, 1750, RIFLE_STOCK);
 
             ITEM(hlc_rifle_SG550_RIS, 1100, RIFLE_STOCK);
             ITEM(hlc_rifle_SG550_TAC, 1200, RIFLE_STOCK);
@@ -8148,18 +8151,18 @@ class cfgHALsStore
 
 			ITEM(CISEF_H_ACH_SD_Pacific, 1000, MISC_STOCK);
 			ITEM(CISEF_H_ACH_SD_C_L_S_Pacific, 1000, MISC_STOCK);
-			ITEM(CISEF_H_ACH_SD_M_Pacific, 1250, MISC_STOCK);
 			ITEM(CISEF_H_ACH_S_SD_Pacific, 1000, MISC_STOCK);
 			ITEM(CISEF_H_ACH_S_SD_C_L_S_Pacific, 1000, MISC_STOCK);
-			ITEM(CISEF_H_ACH_S_SD_M_Pacific, 1250, MISC_STOCK);
 
 			ITEM(CISEF_H_ACH_HC_Pacific, 1000, MISC_STOCK);
 			ITEM(CISEF_H_ACH_HC_C_L_S_Pacific, 1000, MISC_STOCK);
 			ITEM(CISEF_H_ACH_S_HC_Pacific, 1000, MISC_STOCK);
 			ITEM(CISEF_H_ACH_S_HC_C_L_S_Pacific, 1000, MISC_STOCK);
 
-			ITEM(CISEF_H_ACH_SD_AntiThermal, 1250, MISC_STOCK);
-			ITEM(CISEF_H_ACH_SD_C_L_S_AntiThermal, 1250, MISC_STOCK);
+			ITEM(CISEF_H_ACH_TI_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_H_ACH_TI_C_L_S_Pacific, 1250, MISC_STOCK);
+			ITEM(CISEF_H_ACH_S_TI_Pacific, 1250, MISC_STOCK);
+            ITEM(CISEF_H_ACH_S_TI_C_L_S_Pacific, 1250, MISC_STOCK);
 	    };
 
 		class backpacksCISEF
@@ -8184,7 +8187,7 @@ class cfgHALsStore
             ITEM(CISEF_U_A1_GIL_Pacific, 1000, MISC_STOCK);
             ITEM(CISEF_U_A1_SGIL_Pacific, 1000, MISC_STOCK);
 
-            ITEM(CISEF_U_A2_AntiThermal, 500, MISC_STOCK);
+            ITEM(CISEF_U_A2_Pacific, 500, MISC_STOCK);
 
             ITEM(CISEF_U_CBRN_Pacific, 500, MISC_STOCK);
             ITEM(CISEF_U_CBRN_S_Pacific, 500, MISC_STOCK);
