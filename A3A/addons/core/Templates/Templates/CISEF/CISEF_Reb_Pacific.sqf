@@ -74,10 +74,11 @@ private _shopCISEF =
         ["CISEF_Car_Fennek_Recon_Pacific", 2000, "UNARMEDCAR", {true}],
         ["CISEF_Car_Fennek_M2_Pacific", 3000, "ARMEDCAR", {true}],
         ["CISEF_Car_Arma_Pacific", 3500, "APC", {true}],
-        ["CISEF_Car_Badger_MCT30M_Pacific", 12500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-        ["CISEF_Car_Badger_MCT127_Pacific", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Arma_M2_Pacific", 5000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCT30M_Pacific", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCT127_Pacific", 12500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
         ["CISEF_Car_Badger_MCTMortar_Pacific", 10000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-        ["CISEF_Car_Badger_MCTGAU_Pacific", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCTGAU_Pacific", 13750, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
         ["CISEF_Heli_Littlebird_Pacific", 5000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
         ["CISEF_Heli_Littlebird_Armed_Pacific", 12500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
         ["CISEF_Heli_Kasatka_Pacific", 17500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
@@ -86,7 +87,7 @@ private _shopCISEF =
 
 ["blackMarketStock", _shopCISEF] call _fnc_saveToTemplate;
 
-["lootCrate", "CISEF_Box_Rugged_Loot_Olive"] call _fnc_saveToTemplate;
+["lootCrate", "A3AP_CISEF_Box_Rugged_Loot_Olive"] call _fnc_saveToTemplate;
 
 ///////////////////////////
 //  Rebel Starting Gear  //
