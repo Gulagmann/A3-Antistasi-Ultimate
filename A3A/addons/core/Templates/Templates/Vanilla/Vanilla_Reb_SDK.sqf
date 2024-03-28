@@ -29,9 +29,9 @@ private _vehicleAA = [];
 ["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", ["C_Boat_Civil_01_F", "C_Rubberboat"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["I_G_HMG_02_high_F", "I_G_HMG_02_F"]] call _fnc_saveToTemplate;
-["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
-private _staticAA = ["I_static_AA_F"];
+["staticMGs", ["I_G_HMG_02_high_F", "I_G_HMG_02_F","vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
+["staticAT", ["I_static_AT_F","vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
+private _staticAA = ["I_static_AA_F","vn_o_nva_navy_static_zpu4"];
 ["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
@@ -61,6 +61,12 @@ private _shopWs = if (_hasWs) then {
         ["I_G_Offroad_01_armor_base_lxWS", 4500, "UNARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}]
+        ["vn_b_armor_m67_01_01", 6000, "Medium Tank", {tierWar > 3}]
+        ["vn_b_armor_m48_01_01", 6000, "Medium Flame Tank", {tierWar > 3}]
+        ["vn_i_armor_type63_01", 6000, "Light Tank", {tierWar > 3}]
+        ["B_ION_Pickup_aat_rf", 15000, "Pickup AA", {tierWar > 5}]
+        ["B_MBT_01_mlrs_F", 100000, "Artillery", {tierWar > 8}]
+        ["O_G_Pickup_mrl_rf", 20000, "Pickup Artillery", {tierWar > 6}]
     ]
 } else {
     []
@@ -94,7 +100,14 @@ private _initialRebelEquipment = [
     "B_FieldPack_oli","B_FieldPack_blk","B_FieldPack_khk",
     "V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F",
     "Binocular",
-    "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol"
+    "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
+    "vn_m9130",
+    "vn_izh54_shorty",
+    "vn_izh54",
+    "vn_sten",
+    "vn_vz54",
+    "vn_ppsh41",
+    "vn_mp40"
 ];
 
 if (_hasLawsOfWar) then {

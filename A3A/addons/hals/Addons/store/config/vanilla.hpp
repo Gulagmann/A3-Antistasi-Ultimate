@@ -1155,4 +1155,7 @@
 			ITEM(I_UavTerminal, 800, MISC_STOCK);
 			ITEM(O_UavTerminal, 800, MISC_STOCK);
 			ITEM(B_UavTerminal, 800, MISC_STOCK);
+
+			ITEM(H_HelmetHeavy_Black_RF, 10000, MISC_STOCK);
+			ITEM(H_HelmetHeavy_Sand_RF, 10000, MISC_STOCK);
 		};
