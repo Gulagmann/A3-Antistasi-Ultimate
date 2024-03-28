@@ -44,7 +44,7 @@ private _staticAA = ["I_static_AA_F","vn_o_nva_navy_static_zpu4"];
 
 if (_hasWs) then {
   _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
-  _staticAA = ["I_Tura_ZU23_lxWS"];
+  _staticAA pushBack "I_Tura_ZU23_lxWS";
 };
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
@@ -60,12 +60,12 @@ private _shopWs = if (_hasWs) then {
         ["I_G_UAV_02_IED_lxWS", 4500, "UAV", {tierWar > 3}],
         ["I_G_Offroad_01_armor_base_lxWS", 4500, "UNARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
-        ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}]
-        ["vn_b_armor_m67_01_01", 6000, "Medium Tank", {tierWar > 3}]
-        ["vn_b_armor_m48_01_01", 6000, "Medium Flame Tank", {tierWar > 3}]
-        ["vn_i_armor_type63_01", 6000, "Light Tank", {tierWar > 3}]
-        ["B_ION_Pickup_aat_rf", 15000, "Pickup AA", {tierWar > 5}]
-        ["B_MBT_01_mlrs_F", 100000, "Artillery", {tierWar > 8}]
+        ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}],
+        ["vn_b_armor_m67_01_01", 6000, "Medium Tank", {tierWar > 3}],
+        ["vn_b_armor_m48_01_01", 6000, "Medium Flame Tank", {tierWar > 3}],
+        ["vn_i_armor_type63_01", 6000, "Light Tank", {tierWar > 3}],
+        ["B_ION_Pickup_aat_rf", 15000, "Pickup AA", {tierWar > 5}],
+        ["B_MBT_01_mlrs_F", 100000, "Artillery", {tierWar > 8}],
         ["O_G_Pickup_mrl_rf", 20000, "Pickup Artillery", {tierWar > 6}]
     ]
 } else {
@@ -101,13 +101,44 @@ private _initialRebelEquipment = [
     "V_TacChestrig_grn_F","V_TacChestrig_oli_F","V_TacChestrig_cbr_F",
     "Binocular",
     "acc_flashlight","acc_flashlight_smg_01","acc_flashlight_pistol",
-    "vn_m9130",
-    "vn_izh54_shorty",
-    "vn_izh54",
-    "vn_sten",
-    "vn_vz54",
-    "vn_ppsh41",
-    "vn_mp40"
+    "vn_m9130","vn_m9130_mag",
+    "vn_izh54_shorty","vn_izh54_so_mag",
+    "vn_izh54","vn_izh54_mag",
+    "vn_sten","vn_sten_mag",
+    "vn_vz54","vn_m38_mag",
+    "vn_ppsh41","vn_ppsh41_35_mag",
+    "vn_mp40","vn_mp40_mag",
+
+    "vn_molotov_grenade_mag","vn_satchelcharge_02_throw_mag",
+
+    "IxWS_H_turban_01_black","IxWS_H_turban_02_black","IxWS_H_turban_03_black","IxWS_H_turban_04_black",
+    "IxWS_H_turban_01_blue","IxWS_H_turban_02_blue","IxWS_H_turban_03_blue","IxWS_H_turban_04_blue",
+    "IxWS_H_turban_01_blue_una","IxWS_H_turban_02_blue_una","IxWS_H_turban_03_blue_una","IxWS_H_turban_04_blue_una",
+    "IxWS_H_turban_01_green","IxWS_H_turban_02_green","IxWS_H_turban_03_green","IxWS_H_turban_04_green",
+    "IxWS_H_turban_01_green_pattern","IxWS_H_turban_02_green_pattern","IxWS_H_turban_03_green_pattern","IxWS_H_turban_04_green_pattern",
+    "IxWS_H_turban_01_orange","IxWS_H_turban_02_orange","IxWS_H_turban_03_orange","IxWS_H_turban_04_orange",
+    "IxWS_H_turban_01_red","IxWS_H_turban_02_red","IxWS_H_turban_03_red","IxWS_H_turban_04_red",
+    "IxWS_H_turban_01_sand","IxWS_H_turban_02_sand","IxWS_H_turban_03_sand","IxWS_H_turban_04_sand",
+    "IxWS_H_turban_01_white","IxWS_H_turban_02_white","IxWS_H_turban_03_white","IxWS_H_turban_04_white",
+    "IxWS_H_turban_01_yellow","IxWS_H_turban_02_yellow","IxWS_H_turban_03_yellow","IxWS_H_turban_04_yellow",
+
+    "U_IxWS_C_Djella_03",
+    "U_IxWS_C_Djella_06",
+    "U_IxWS_C_Djella_02",
+    "U_IxWS_C_Djella_02a",
+    "U_IxWS_C_Djella_07",
+    "U_IxWS_C_Djella_05",
+    "U_IxWS_C_Djella_04",
+    "U_IxWS_C_Djella_01",
+    "U_IxWS_Tak_02_B",
+    "U_IxWS_Tak_02_C",
+    "U_IxWS_Tak_02_A",
+    "U_IxWS_Tak_03_B",
+    "U_IxWS_Tak_03_A",
+    "U_IxWS_Tak_03_C",
+    "U_IxWS_Tak_01_C",
+    "U_IxWS_Tak_01_B",
+    "U_IxWS_Tak_01_A
 ];
 
 if (_hasLawsOfWar) then {
