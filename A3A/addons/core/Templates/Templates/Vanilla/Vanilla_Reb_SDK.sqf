@@ -30,11 +30,13 @@ private _vehicleAA = [];
 ["vehiclesCivBoat", ["C_Boat_Civil_01_F", "C_Rubberboat"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["I_G_HMG_02_high_F", "I_G_HMG_02_F","vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
-["staticAT", ["I_static_AT_F","vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
+["staticAT", ["I_static_AT_F","vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr"]] call _fnc_saveToTemplate;
 private _staticAA = ["I_static_AA_F","vn_o_nva_navy_static_zpu4"];
 ["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
+["Tank", ["vn_b_armor_m41_01_01"]] call _fnc_saveToTemplate;
+["AA old", ["vn_o_nva_navy_static_zpu4","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
 
 ["minesAT", ["ATMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag"]] call _fnc_saveToTemplate;
 ["minesAPERS", ["ClaymoreDirectionalMine_Remote_Mag","APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "APERSTripMine_Wire_Mag"]] call _fnc_saveToTemplate;
@@ -61,7 +63,7 @@ private _shopWs = if (_hasWs) then {
         ["I_G_Offroad_01_armor_base_lxWS", 4500, "UNARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}],
-        ["vn_b_armor_m67_01_01", 6000, "Medium Tank", {tierWar > 3}],
+        ["vn_b_armor_m67_01_01", 5000, "Medium Tank", {tierWar > 3}],
         ["vn_b_armor_m48_01_01", 6000, "Medium Flame Tank", {tierWar > 3}],
         ["vn_i_armor_type63_01", 6000, "Light Tank", {tierWar > 3}],
         ["B_ION_Pickup_aat_rf", 15000, "Pickup AA", {tierWar > 5}],
