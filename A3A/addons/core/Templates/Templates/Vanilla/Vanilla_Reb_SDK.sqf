@@ -143,7 +143,7 @@ private _initialRebelEquipment = [
     "U_IxWS_Tak_03_C",
     "U_IxWS_Tak_01_C",
     "U_IxWS_Tak_01_B",
-    "U_IxWS_Tak_01_A
+    "U_IxWS_Tak_01_A"
 ];
 
 if (_hasLawsOfWar) then {
