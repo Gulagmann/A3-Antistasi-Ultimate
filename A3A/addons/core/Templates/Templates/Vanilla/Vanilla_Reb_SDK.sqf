@@ -65,8 +65,17 @@ private _shopWs = if (_hasWs) then {
         ["vn_b_armor_m48_01_01", 6000, "Medium Flame Tank", {tierWar > 3}],
         ["vn_i_armor_type63_01", 6000, "Light Tank", {tierWar > 3}],
         ["B_ION_Pickup_aat_rf", 15000, "Pickup AA", {tierWar > 5}],
-        ["B_MBT_01_mlrs_F", 100000, "Artillery", {tierWar > 8}],
-        ["O_G_Pickup_mrl_rf", 20000, "Pickup Artillery", {tierWar > 6}]
+        ["B_MBT_01_mlrs_F", 80000, "Artillery", {tierWar > 8}],
+        ["O_G_Pickup_mrl_rf", 15000, "Pickup Artillery", {tierWar > 5}],
+        ["vn_o_air_mig19_at", 15000, "Jet", {tierWar > 5}],
+        ["vn_o_air_mig21_at", 40000, "Jet", {tierWar > 7}],
+        ["a3a_Plane_Fighter_03_grey_F", 20000, "Jet", {tierWar > 7}],
+        ["I_E_Heli_light_03_dynamicLoadout_F", 20000, "HELI", {tierWar > 7}],
+        ["I_E_EC_02_RF", 15000, "HELI", {tierWar > 5}],
+        ["I_E_Heli_light_03_dynamicLoadout_RF", 10000, "HELI", {tierWar > 5}],
+        ["vn_b_air_ah1g_02_usmc", 9000, "HELI", {tierWar > 4}],
+        ["vn_i_air_uh1c_02_01", 13000, "HELI", {tierWar > 4}],
+        ["vn_i_air_uh1c_02_01", 13000, "HELI", {tierWar > 4}]
     ]
 } else {
     []
@@ -76,7 +85,7 @@ private _vehiclesBlackMarket = _shopWs + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
-    ["B_Heli_Light_01_dynamicLoadout_F", 25000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ["B_Heli_Light_01_dynamicLoadout_F", 10000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
 ];
 ["blackMarketStock", _vehiclesBlackMarket] call _fnc_saveToTemplate;
 
