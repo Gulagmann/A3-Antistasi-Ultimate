@@ -13,12 +13,12 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "flag_Syndicat"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["I_G_Quadbike_01_F","vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_stattic_zgu1_01"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"]] call _fnc_saveToTemplate;
-private _vehicleAA = [];
+private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65"];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
 
@@ -40,6 +40,8 @@ private _staticAA = ["I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4"];
 ["Artillery old", ["vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
 ["MG old", ["vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
 ["AT old", ["vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr"]] call _fnc_saveToTemplate;
+["Bicycle", ["vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
+["Mobile AA", ["vn_o_wheeled_btr40_mg_03_nva65"]] call _fnc_saveToTemplate;
 
 ["minesAT", ["ATMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag"]] call _fnc_saveToTemplate;
 ["minesAPERS", ["ClaymoreDirectionalMine_Remote_Mag","APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "APERSTripMine_Wire_Mag"]] call _fnc_saveToTemplate;
@@ -67,20 +69,20 @@ private _shopWs = if (_hasWs) then {
         ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}],
         ["vn_b_armor_m67_01_01", 5000, "Medium Tank", {tierWar > 3}],
-        ["vn_b_armor_m48_01_01", 6000, "Medium Flame Tank", {tierWar > 3}],
-        ["vn_i_armor_type63_01", 6000, "Light Tank", {tierWar > 3}],
-        ["B_ION_Pickup_aat_rf", 15000, "Pickup AA", {tierWar > 5}],
-        ["B_MBT_01_mlrs_F", 80000, "Artillery", {tierWar > 8}],
-        ["O_G_Pickup_mrl_rf", 15000, "Pickup Artillery", {tierWar > 5}],
-        ["vn_o_air_mig19_at", 15000, "Jet", {tierWar > 5}],
-        ["vn_o_air_mig21_at", 40000, "Jet", {tierWar > 7}],
-        ["a3a_Plane_Fighter_03_grey_F", 20000, "Jet", {tierWar > 7}],
-        ["I_E_Heli_light_03_dynamicLoadout_F", 20000, "HELI", {tierWar > 7}],
-        ["I_E_EC_02_RF", 15000, "HELI", {tierWar > 5}],
-        ["I_E_Heli_light_03_dynamicLoadout_RF", 10000, "HELI", {tierWar > 5}],
-        ["vn_b_air_ah1g_02_usmc", 9000, "HELI", {tierWar > 4}],
-        ["vn_i_air_uh1c_02_01", 13000, "HELI", {tierWar > 4}],
-        ["vn_i_air_uh1c_02_01", 13000, "HELI", {tierWar > 4}]
+        ["vn_b_armor_m48_01_01", 5000, "Medium Flame Tank", {tierWar > 3}],
+        ["vn_i_armor_type63_01", 5000, "Light Tank", {tierWar > 3}],
+        ["B_ION_Pickup_aat_rf", 2500, "Pickup AA", {tierWar > 5}],
+        ["B_MBT_01_mlrs_F", 15000, "Artillery", {tierWar > 8}],
+        ["O_G_Pickup_mrl_rf", 3000, "Pickup Artillery", {tierWar > 5}],
+        ["vn_o_air_mig19_at", 6000, "Jet", {tierWar > 5}],
+        ["vn_o_air_mig21_at", 8000, "Jet", {tierWar > 7}],
+        ["a3a_Plane_Fighter_03_grey_F", 8000, "Jet", {tierWar > 7}],
+        ["I_E_Heli_light_03_dynamicLoadout_F", 5000, "HELI", {tierWar > 7}],
+        ["I_E_EC_02_RF", 5000, "HELI", {tierWar > 5}],
+        ["I_E_Heli_light_03_dynamicLoadout_RF", 5000, "HELI", {tierWar > 5}],
+        ["vn_b_air_ah1g_02_usmc", 3500, "HELI", {tierWar > 4}],
+        ["vn_i_air_uh1c_02_01", 3000, "HELI", {tierWar > 4}],
+        ["vn_i_air_uh1c_02_01", 3000, "HELI", {tierWar > 4}]
     ]
 } else {
     []

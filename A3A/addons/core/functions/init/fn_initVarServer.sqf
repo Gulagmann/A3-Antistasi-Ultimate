@@ -578,11 +578,14 @@ _fnc_setPriceIfValid =
 { [_rebelVehicleCosts, _x, 1200] call _fnc_setPriceIfValid } forEach FactionGet(reb, "vehiclesAT");
 { [_rebelVehicleCosts, _x, 5000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "vehiclesCivHeli");
 { [_rebelVehicleCosts, _x, 5000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "vehiclesPlane") + FactionGet(reb, "vehiclesCivPlane");
-{ [_rebelVehicleCosts, _x, 1000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "Tank old");
+{ [_rebelVehicleCosts, _x, 3000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "Tank old");
 { [_rebelVehicleCosts, _x, 500] call _fnc_setPriceIfValid } forEach FactionGet(reb, "AA old");
 { [_rebelVehicleCosts, _x, 600] call _fnc_setPriceIfValid } forEach FactionGet(reb, "Artillery old");
 { [_rebelVehicleCosts, _x, 250] call _fnc_setPriceIfValid } forEach FactionGet(reb, "MG old");
 { [_rebelVehicleCosts, _x, 500] call _fnc_setPriceIfValid } forEach FactionGet(reb, "AT old");
+{ [_rebelVehicleCosts, _x, 10] call _fnc_setPriceIfValid } forEach FactionGet(reb, "Bicycle");
+{ [_rebelVehicleCosts, _x, 1000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "Gunboat");
+{ [_rebelVehicleCosts, _x, 1000] call _fnc_setPriceIfValid } forEach FactionGet(reb, "Mobile AA");
 
 // Template overrides
 private _overrides = FactionGet(Reb, "attributesVehicles") + FactionGet(Occ, "attributesVehicles") + FactionGet(Inv, "attributesVehicles");
