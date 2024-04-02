@@ -13,30 +13,30 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "\cisef_core\data\Flag_CISEF.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "CISEF_Marker_CISEF"] call _fnc_saveToTemplate;
 
-["vehicleBasic", "I_G_Quadbike_01_F"] call _fnc_saveToTemplate;
-["vehicleLightUnarmed", "CISEF_Car_Offroad_Pacific"] call _fnc_saveToTemplate;
-["vehicleLightArmed", "CISEF_Car_Dagor_M2_Pacific"] call _fnc_saveToTemplate;
-["vehicleTruck", "I_G_Van_01_transport_F"] call _fnc_saveToTemplate;
-["vehicleAT", "CISEF_Car_Dagor_Metis_Pacific"] call _fnc_saveToTemplate;
+["vehicleBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehicleLightUnarmed", ["CISEF_Car_Offroad_Pacific"]] call _fnc_saveToTemplate;
+["vehicleLightArmed", ["CISEF_Car_Dagor_M2_Pacific"]] call _fnc_saveToTemplate;
+["vehicleTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
+["vehicleAT", ["CISEF_Car_Dagor_Metis_Pacific"]] call _fnc_saveToTemplate;
 private _vehicleAA = "";
 
-["vehicleBoat", "I_C_Boat_Transport_02_F"] call _fnc_saveToTemplate;
-["vehicleRepair", "CISEF_Car_Offroad_Rep_Pacific"] call _fnc_saveToTemplate;
-["vehicleFuel", "CISEF_Car_Typhoon_Fuel_Pacific"] call _fnc_saveToTemplate;
+["vehicleBoat", ["I_C_Boat_Transport_02_F"]] call _fnc_saveToTemplate;
+["vehicleRepair", ["CISEF_Car_Offroad_Rep_Pacific"]] call _fnc_saveToTemplate;
+["vehicleFuel", ["CISEF_Car_Typhoon_Fuel_Pacific"]] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclePlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
+["vehiclePayloadPlane", ["I_C_Plane_Civil_01_F"]] call _fnc_saveToTemplate;
 
-["vehicleCivCar", "C_Offroad_01_F"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "C_Van_01_transport_F"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
-["vehicleCivBoat", "C_Rubberboat"] call _fnc_saveToTemplate;
-["vehicleCivSupply", "C_Van_01_box_F"] call _fnc_saveToTemplate;
+["vehicleCivCar", ["C_Offroad_01_F"]] call _fnc_saveToTemplate;
+["vehicleCivTruck", ["C_Van_01_transport_F"]] call _fnc_saveToTemplate;
+["vehicleCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
+["vehicleCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
+["vehicleCivSupply", ["C_Van_01_box_F"]] call _fnc_saveToTemplate;
 
-["staticMG", "CISEF_Trt_M2_high_Pacific"] call _fnc_saveToTemplate;
-["staticAT", "I_static_AT_F"] call _fnc_saveToTemplate;
-private _staticAA = "I_static_AA_F";
-["staticMortar", "I_G_Mortar_01_F"] call _fnc_saveToTemplate;
+["staticMG", ["CISEF_Trt_M2_high_Pacific"]] call _fnc_saveToTemplate;
+["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
+private _staticAA = ["I_static_AA_F"];
+["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
 
@@ -153,56 +153,57 @@ if (_hasLawsOfWar) then {
 
 _initialRebelEquipment append _civilianBackpacks;
 
-    ["uniforms", [
-        "CISEF_U_Casual_BlackWhite_Pacific",
-        "CISEF_U_Casual_RedBlack_Pacific",
-        "CISEF_U_Casual_Skyblue_Pacific",
-        "CISEF_U_Casual_GreenRed_Pacific",
-        "CISEF_U_Casual_BlackBrown_Pacific",
-        "CISEF_U_Casual_RedOrange_Pacific",
-        "CISEF_U_Casual_BlueYellow_Pacific",
-        "CISEF_U_Casual_YellowFlower_Pacific",
-        "CISEF_U_C1_Pacific",
-        "CISEF_U_C1_H_Pacific",
-        "CISEF_U_C1_SS_H_Pacific",
-        "CISEF_U_C1_2_Pacific",
-        "CISEF_U_C1_2_H_Pacific",
-        "CISEF_U_C1_2_SS_H_Pacific",
-        "CISEF_U_C2_Pacific",
-        "CISEF_U_C2_O_Pacific",
-        "CISEF_U_B1_Pacific",
-        "CISEF_U_B1_H_Pacific",
-        "CISEF_U_B1_SS_H_Pacific",
-        "CISEF_U_B1_2_Pacific",
-        "CISEF_U_B1_2_H_Pacific",
-        "CISEF_U_B1_2_SS_H_Pacific",
-        "CISEF_U_B1_COAT_Pacific",
-        "CISEF_U_B1_COAT_H_Pacific",
-        "CISEF_U_A1_Pacific",
-        "CISEF_U_A1_H_Pacific",
-        "CISEF_U_A1_SS_H_Pacific",
-        "CISEF_U_A1_TEE_Pacific",
-        "CISEF_U_A1_SHRT_Pacific",
-        "CISEF_U_A1_COAT_Pacific",
-        "CISEF_U_A1_COAT_H_Pacific"
-    ]] call _fnc_saveToTemplate;
+private _rebUniforms = [
+    "CISEF_U_Casual_BlackWhite_Pacific",
+    "CISEF_U_Casual_RedBlack_Pacific",
+    "CISEF_U_Casual_Skyblue_Pacific",
+    "CISEF_U_Casual_GreenRed_Pacific",
+    "CISEF_U_Casual_BlackBrown_Pacific",
+    "CISEF_U_Casual_RedOrange_Pacific",
+    "CISEF_U_Casual_BlueYellow_Pacific",
+    "CISEF_U_Casual_YellowFlower_Pacific",
+    "CISEF_U_C1_Pacific",
+    "CISEF_U_C1_H_Pacific",
+    "CISEF_U_C1_SS_H_Pacific",
+    "CISEF_U_C1_2_Pacific",
+    "CISEF_U_C1_2_H_Pacific",
+    "CISEF_U_C1_2_SS_H_Pacific",
+    "CISEF_U_C2_Pacific",
+    "CISEF_U_C2_O_Pacific",
+    "CISEF_U_B1_Pacific",
+    "CISEF_U_B1_H_Pacific",
+    "CISEF_U_B1_SS_H_Pacific",
+    "CISEF_U_B1_2_Pacific",
+    "CISEF_U_B1_2_H_Pacific",
+    "CISEF_U_B1_2_SS_H_Pacific",
+    "CISEF_U_B1_COAT_Pacific",
+    "CISEF_U_B1_COAT_H_Pacific",
+    "CISEF_U_A1_Pacific",
+    "CISEF_U_A1_H_Pacific",
+    "CISEF_U_A1_SS_H_Pacific",
+    "CISEF_U_A1_TEE_Pacific",
+    "CISEF_U_A1_SHRT_Pacific",
+    "CISEF_U_A1_COAT_Pacific",
+    "CISEF_U_A1_COAT_H_Pacific"
+];
+["uniforms", _rebUniforms] call _fnc_saveToTemplate;
 
-    ["headgear", [
-        "CISEF_H_Woolhat_Pacific",
-        "CISEF_H_Woolhat_M_Pacific",
-        "CISEF_H_Milcap_Pacific",
-        "CISEF_H_Milcap_M_Pacific",
-        "CISEF_H_Cap_Pacific",
-        "CISEF_H_Cap_B_Pacific",
-        "CISEF_H_Cap_M_Pacific",
-        "CISEF_H_Boonie_Pacific",
-        "CISEF_H_Boonie_M_Pacific",
-        "CISEF_H_Boonie_N_Pacific",
-        "CISEF_H_Beret_Peasant",
-        "CISEF_H_Beret_Com",
-        "CISEF_H_Bandana_Pacific",
-        "CISEF_H_Bandana_M_Pacific"
-    ]] call _fnc_saveToTemplate;
+["headgear", [
+    "CISEF_H_Woolhat_Pacific",
+    "CISEF_H_Woolhat_M_Pacific",
+    "CISEF_H_Milcap_Pacific",
+    "CISEF_H_Milcap_M_Pacific",
+    "CISEF_H_Cap_Pacific",
+    "CISEF_H_Cap_B_Pacific",
+    "CISEF_H_Cap_M_Pacific",
+    "CISEF_H_Boonie_Pacific",
+    "CISEF_H_Boonie_M_Pacific",
+    "CISEF_H_Boonie_N_Pacific",
+    "CISEF_H_Beret_Peasant",
+    "CISEF_H_Beret_Com",
+    "CISEF_H_Bandana_Pacific",
+    "CISEF_H_Bandana_M_Pacific"
+]] call _fnc_saveToTemplate;
 
 if (A3A_hasTFAR) then {_initialRebelEquipment append ["tf_microdagr","tf_anprc154"]};
 if (A3A_hasTFAR && startWithLongRangeRadio) then {_initialRebelEquipment pushBack "tf_anprc155_coyote"};

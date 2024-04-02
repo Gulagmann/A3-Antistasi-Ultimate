@@ -5,7 +5,28 @@ class Templates
     {
         description = "";
     };
-    
+
+    // ************************************** GGF *******************************************************
+
+    class GGF_Base : Base
+    {
+        requiredAddons[] = {"cisef_core"};
+        logo = QPATHTOFOLDER(Templates\Templates\GGF\Logo\Gulag_Ground_Force_Logo.paa);
+        basepath = QPATHTOFOLDER(Templates\Templates\GGF); //the path to the template folder
+        priority = 2;
+        equipFlags[] = {"vanilla"};
+        description = $STR_A3AP_setupFactionsTab_GGF;
+    };
+
+    class GGF : GGF_Base
+    {
+        file = "Gulag_Ground_Force";
+        climate[] = {"Arid"};
+        side = "Reb";
+        name = "Gulag Ground Force";
+        flagTexture = QPATHTOFOLDER(Templates\Templates\GGF\Logo\Gulag_Ground_Force_Flag.paa);
+    }
+
 // ************************************** CISEF *******************************************************
 
     class CISEF_Base : Base
