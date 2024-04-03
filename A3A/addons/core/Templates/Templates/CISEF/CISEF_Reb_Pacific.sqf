@@ -13,7 +13,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "\cisef_core\data\Flag_CISEF.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "CISEF_Marker_CISEF"] call _fnc_saveToTemplate;
 
-["vehicleBasic", ["I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehicleBasic", ["I_G_Quadbike_01_F",]] call _fnc_saveToTemplate;
 ["vehicleLightUnarmed", ["CISEF_Car_Offroad_Pacific"]] call _fnc_saveToTemplate;
 ["vehicleLightArmed", ["CISEF_Car_Dagor_M2_Pacific"]] call _fnc_saveToTemplate;
 ["vehicleTruck", ["I_G_Van_01_transport_F"]] call _fnc_saveToTemplate;
@@ -33,7 +33,7 @@ private _vehicleAA = "";
 ["vehicleCivBoat", ["C_Rubberboat"]] call _fnc_saveToTemplate;
 ["vehicleCivSupply", ["C_Van_01_box_F"]] call _fnc_saveToTemplate;
 
-["staticMG", ["CISEF_Trt_M2_high_Pacific"]] call _fnc_saveToTemplate;
+["staticMG", ["CISEF_B_M2_high_weapon_Pacific","CISEF_B_M2_high_support_Pacific","CISEF_Trt_M2_high_Pacific"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_static_AT_F"]] call _fnc_saveToTemplate;
 private _staticAA = ["I_static_AA_F"];
 ["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
@@ -58,6 +58,8 @@ if (_hasWs) then {
 };
 ["vehicleAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
+
+
 
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //

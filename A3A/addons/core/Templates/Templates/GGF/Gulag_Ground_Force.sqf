@@ -7,18 +7,20 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "Gulag Ground Force"] call _fnc_saveToTemplate;
+#include "..\..\..\script_component.hpp"
 
-["flag", "Flag_GGF_F"] call _fnc_saveToTemplate;
+["name", "GGF"] call _fnc_saveToTemplate;
+
+["flag", "Flag_Syndikat_F"] call _fnc_saveToTemplate;
 ["flagTexture", QPATHTOFOLDER(Templates\Templates\GGF\Logo\Gulag_Ground_Force_Flag.paa)] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_GGF"] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_Syndicat"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["I_G_Quadbike_01_F","vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_stattic_zgu1_01"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["vn_o_bicycle_01_nva65","I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_static_zgu1_01","CISEF_Car_Offroad_Pacific"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F","CISEF_Car_Dagor_M2_Pacific"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F"]] call _fnc_saveToTemplate;
-private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65"];
+["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F","CISEF_Car_Dagor_Metis_Pacific","vn_b_armor_m41_01_01"]] call _fnc_saveToTemplate;
+private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65","B_ION_Pickup_aat_rf","B_MBT_01_mlrs_F"];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F","vn_o_boat_04_02"]] call _fnc_saveToTemplate;
 
@@ -29,26 +31,20 @@ private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65"
 ["vehiclesCivHeli", ["C_Heli_Light_01_civil_F"]] call _fnc_saveToTemplate;
 ["vehiclesCivBoat", ["C_Boat_Civil_01_F", "C_Rubberboat"]] call _fnc_saveToTemplate;
 
-["staticMGs", ["vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
-["staticAT", ["vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr","vn_b_armor_m41_01_01","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
+["staticMGs", ["CISEF_Trt_M2_high_Pacific","vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
+["staticAT", ["I_static_AT_F","vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
 private _staticAA = ["I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4"];
 ["staticMortars", ["I_G_Mortar_01_F"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
-["Tank old", ["vn_b_armor_m41_01_01"]] call _fnc_saveToTemplate;
-["AA old", ["vn_o_nva_navy_static_zpu4"]] call _fnc_saveToTemplate;
-["Artillery old", ["vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
-["MG old", ["vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
-["AT old", ["vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr"]] call _fnc_saveToTemplate;
-["Bicycle", ["vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
-["Mobile AA", ["vn_o_wheeled_btr40_mg_03_nva65"]] call _fnc_saveToTemplate;
-["Gunboat", ["vn_o_boat_04_02"]] call _fnc_saveToTemplate;
 
 ["minesAT", ["ATMine_Range_Mag", "SLAMDirectionalMine_Wire_Mag"]] call _fnc_saveToTemplate;
 ["minesAPERS", ["ClaymoreDirectionalMine_Remote_Mag","APERSMine_Range_Mag", "APERSBoundingMine_Range_Mag", "APERSTripMine_Wire_Mag"]] call _fnc_saveToTemplate;
 
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
+
+["Bicycle", ["vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
 
 if (_hasWs) then {
   _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
@@ -57,11 +53,34 @@ if (_hasWs) then {
 ["vehiclesAA", _vehicleAA] call _fnc_saveToTemplate;
 ["staticAA", _staticAA] call _fnc_saveToTemplate;
 
+#include "GGF_Reb_Vehicle_Attributes.sqf"
+
 //////////////////////////////////////
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 
 //classname, price, type, availability condition
+private _shopCISEF =
+    [
+        ["CISEF_Heli_AP5_Pacific", 3000, "UAV", {tierWar > 2}],
+        ["CISEF_Heli_AP5_IED_Pacific", 4500, "UAV", {tierWar > 3}],
+        ["CISEF_Tank_ED1D_Pacific", 1000, "UAV", {true}],
+        ["CISEF_Car_Dagor_M134_Pacific", 1500, "ARMEDCAR", {true}],
+        ["CISEF_Car_Fennek_AA_Pacific", 6000, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Fennek_Recon_Pacific", 2000, "UNARMEDCAR", {true}],
+        ["CISEF_Car_Fennek_M2_Pacific", 3000, "ARMEDCAR", {true}],
+        ["CISEF_Car_Arma_Pacific", 3500, "APC", {true}],
+        ["CISEF_Car_Arma_M2_Pacific", 5000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCT30M_Pacific", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCT127_Pacific", 12500, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCTMortar_Pacific", 10000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Car_Badger_MCTGAU_Pacific", 13750, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["CISEF_Heli_Littlebird_Pacific", 5000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["CISEF_Heli_Littlebird_Armed_Pacific", 12500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["CISEF_Heli_Kasatka_Pacific", 17500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["CISEF_Heli_Merlin_Pacific", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+    ];
+
 private _shopWs = if (_hasWs) then {
     [
         ["I_UAV_02_lxWS", 3500, "UAV", {tierWar > 2}], 
@@ -69,12 +88,10 @@ private _shopWs = if (_hasWs) then {
         ["I_G_Offroad_01_armor_base_lxWS", 4500, "UNARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_armed_lxWS", 4500, "ARMEDCAR", {true}],
         ["I_G_Offroad_01_armor_AT_lxWS", 4500, "ARMEDCAR", {true}],
-        ["vn_b_armor_m67_01_01", 5000, "Medium Tank", {tierWar > 3}],
-        ["vn_b_armor_m48_01_01", 5000, "Medium Flame Tank", {tierWar > 3}],
-        ["vn_i_armor_type63_01", 5000, "Light Tank", {tierWar > 3}],
-        ["B_ION_Pickup_aat_rf", 2500, "Pickup AA", {tierWar > 5}],
+        ["vn_b_armor_m67_01_01", 6000, "Medium Tank", {tierWar > 3}],
+        ["vn_b_armor_m48_01_01", 5500, "Medium Flame Tank", {tierWar > 3}],
+        ["vn_i_armor_type63_01", 5500, "Light Tank", {tierWar > 3}],
         ["B_MBT_01_mlrs_F", 15000, "Artillery", {tierWar > 8}],
-        ["O_G_Pickup_mrl_rf", 3000, "Pickup Artillery", {tierWar > 5}],
         ["vn_o_air_mig19_at", 6000, "Jet", {tierWar > 5}],
         ["vn_o_air_mig21_at", 8000, "Jet", {tierWar > 7}],
         ["a3a_Plane_Fighter_03_grey_F", 8000, "Jet", {tierWar > 7}],
@@ -89,7 +106,7 @@ private _shopWs = if (_hasWs) then {
     []
 };
 
-private _vehiclesBlackMarket = _shopWs + [
+private _vehiclesBlackMarket = _shopCISEF + _shopWs + [
     ["I_UAV_01_F", 2000, "UAV", {true}],
     ["I_LT_01_AA_F", 7500, "AA", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count (milbases + airportsX) > 0}],
     ["I_APC_Wheeled_03_cannon_F", 15000, "APC", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
@@ -158,7 +175,15 @@ private _initialRebelEquipment = [
     "U_IxWS_Tak_03_C",
     "U_IxWS_Tak_01_C",
     "U_IxWS_Tak_01_B",
-    "U_IxWS_Tak_01_A"
+    "U_IxWS_Tak_01_A",
+    "CISEF_B_Assaultbag_Pacific","CISEF_B_Assaultbag_Pacific_S", "B_AssaultPack_blk","B_AssaultPack_cbr","B_AssaultPack_rgr","B_AssaultPack_khk","B_AssaultPack_sgg",
+    "CISEF_B_Legstrap_Pacific",
+    "CISEF_B_Messengerbag_Pacific","CISEF_B_Messengerbag_Pacific_S",
+    "CISEF_V_Belt_Pacific","CISEF_V_Belt_H_Pacific", "V_Rangemaster_belt",
+    "CISEF_V_Chestrig_Var1_Pacific","CISEF_V_Chestrig_Var1_H_Pacific",
+    "CISEF_V_Chestrig_Var2_Pacific","CISEF_V_Chestrig_Var2_H_Pacific",
+    "CISEF_V_Chestrig_Var3_Pacific","CISEF_V_Chestrig_Var3_H_Pacific"
+
 ];
 
 if (_hasLawsOfWar) then {
@@ -221,7 +246,39 @@ private _rebUniforms = [
     "U_I_C_Soldier_Para_2_F",
     "U_I_C_Soldier_Camo_F",
     "U_IG_Guerilla2_2",
-    "U_IG_Guerilla2_3"
+    "U_IG_Guerilla2_3",
+    "CISEF_U_Casual_BlackWhite_Pacific",
+    "CISEF_U_Casual_RedBlack_Pacific",
+    "CISEF_U_Casual_Skyblue_Pacific",
+    "CISEF_U_Casual_GreenRed_Pacific",
+    "CISEF_U_Casual_BlackBrown_Pacific",
+    "CISEF_U_Casual_RedOrange_Pacific",
+    "CISEF_U_Casual_BlueYellow_Pacific",
+    "CISEF_U_Casual_YellowFlower_Pacific",
+    "CISEF_U_C1_Pacific",
+    "CISEF_U_C1_H_Pacific",
+    "CISEF_U_C1_SS_H_Pacific",
+    "CISEF_U_C1_2_Pacific",
+    "CISEF_U_C1_2_H_Pacific",
+    "CISEF_U_C1_2_SS_H_Pacific",
+    "CISEF_U_C2_Pacific",
+    "CISEF_U_C2_O_Pacific",
+    "CISEF_U_B1_Pacific",
+    "CISEF_U_B1_H_Pacific",
+    "CISEF_U_B1_SS_H_Pacific",
+    "CISEF_U_B1_2_Pacific",
+    "CISEF_U_B1_2_H_Pacific",
+    "CISEF_U_B1_2_SS_H_Pacific",
+    "CISEF_U_B1_COAT_Pacific",
+    "CISEF_U_B1_COAT_H_Pacific",
+    "CISEF_U_A1_Pacific",
+    "CISEF_U_A1_H_Pacific",
+    "CISEF_U_A1_SS_H_Pacific",
+    "CISEF_U_A1_TEE_Pacific",
+    "CISEF_U_A1_SHRT_Pacific",
+    "CISEF_U_A1_COAT_Pacific",
+    "CISEF_U_A1_COAT_H_Pacific"
+
 ];
 
 private _dlcUniforms = [];
@@ -234,6 +291,7 @@ if (_hasWs) then {
         "U_lxWS_ION_Casual4",
         "U_lxWS_ION_Casual5",
         "U_lxWS_SFIA_deserter"
+
     ];
 };
 
@@ -244,7 +302,22 @@ if (_hasWs) then {
     "H_Cap_grn",
     "H_Booniehat_oli",
     "H_Bandanna_sgg",
-    "H_Bandanna_khk"
+    "H_Bandanna_khk",
+    "CISEF_H_Woolhat_Pacific",
+    "CISEF_H_Woolhat_M_Pacific",
+    "CISEF_H_Milcap_Pacific",
+    "CISEF_H_Milcap_M_Pacific",
+    "CISEF_H_Cap_Pacific",
+    "CISEF_H_Cap_B_Pacific",
+    "CISEF_H_Cap_M_Pacific",
+    "CISEF_H_Boonie_Pacific",
+    "CISEF_H_Boonie_M_Pacific",
+    "CISEF_H_Boonie_N_Pacific",
+    "CISEF_H_Beret_Peasant",
+    "CISEF_H_Beret_Com",
+    "CISEF_H_Bandana_Pacific",
+    "CISEF_H_Bandana_M_Pacific"
+
 ]] call _fnc_saveToTemplate;
 
 /////////////////////

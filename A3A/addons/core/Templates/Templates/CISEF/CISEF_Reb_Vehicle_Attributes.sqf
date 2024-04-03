@@ -1,0 +1,20 @@
+["attributesVehicles", [
+	["vn_o_bicycle_01_nva65", ["rebCost", 10]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+	["Name", ["rebCost", Number]],
+
+]] call _fnc_saveToTemplate;
