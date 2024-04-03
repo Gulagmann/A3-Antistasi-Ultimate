@@ -7,11 +7,11 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "Syndikat"] call _fnc_saveToTemplate;
+["name", "Gulag Ground Force"] call _fnc_saveToTemplate;
 
-["flag", "Flag_Syndikat_F"] call _fnc_saveToTemplate;
-["flagTexture", "\A3\Data_F_Exp\Flags\flag_SYND_CO.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "flag_Syndicat"] call _fnc_saveToTemplate;
+["flag", "Flag_GGF_F"] call _fnc_saveToTemplate;
+["flagTexture", QPATHTOFOLDER(Templates\Templates\GGF\Logo\Gulag_Ground_Force_Flag.paa)] call _fnc_saveToTemplate;
+["flagMarkerType", "flag_GGF"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["I_G_Quadbike_01_F","vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_stattic_zgu1_01"]] call _fnc_saveToTemplate;
@@ -101,8 +101,6 @@ private _vehiclesBlackMarket = _shopWs + [
     ["I_APC_Wheeled_03_cannon_F", ["Guerilla_01",1]],
     ["I_LT_01_AA_F", ["Indep_Olive",1]]
 ]] call _fnc_saveToTemplate;
-
-#include "Vanilla_Reb_Vehicle_Attributes.sqf"
 
 ///////////////////////////
 //  Rebel Starting Gear  //
