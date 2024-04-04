@@ -24,7 +24,7 @@ class Templates
         climate[] = {"Arid"};
         side = "Reb";
         name = "Gulag Ground Force";
-        flagTexture = QPATHTOFOLDER(Templates\Templates\GGF\Logo\Gulag_Ground_Force_Flag.paa);
+        flagTexture = QPATHTOFOLDER(Templates\Templates\GGF\Logo\Flag_CISEF_GGF.paa);
     }
 
 // ************************************** CISEF *******************************************************

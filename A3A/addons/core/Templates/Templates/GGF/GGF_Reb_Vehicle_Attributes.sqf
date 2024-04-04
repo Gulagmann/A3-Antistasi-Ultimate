@@ -17,6 +17,7 @@
 	["vn_o_nva_navy_static_type56rr", ["rebCost", 500]],
 	//Static Arti//
 	["vn_b_army_static_m101_02", ["rebCost", 1300]],
+	["vn_o_nva_65_static_h12", ["rebCost", 1500]],
 	//Gunboat//
 	["vn_o_boat_04_02", ["rebCost", 1000]],
 	//Artillery//
