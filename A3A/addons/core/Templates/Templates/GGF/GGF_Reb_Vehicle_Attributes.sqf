@@ -1,6 +1,6 @@
 ["attributesVehicles", [
 	//Bike//
-	
+	["vn_o_bicycle_01_nva65", ["rebCost", 10]],
 	//Tank//
 	["vn_b_armor_m41_01_01", ["rebCost", 3000]],
 	//Static MG//

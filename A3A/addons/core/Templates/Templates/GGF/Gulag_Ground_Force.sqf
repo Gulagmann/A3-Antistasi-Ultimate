@@ -44,8 +44,6 @@ private _staticAA = ["I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4"];
 ["breachingExplosivesAPC", [["DemoCharge_Remote_Mag", 1]]] call _fnc_saveToTemplate;
 ["breachingExplosivesTank", [["SatchelCharge_Remote_Mag", 1], ["DemoCharge_Remote_Mag", 2]]] call _fnc_saveToTemplate;
 
-["Bicycle", ["vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
-
 if (_hasWs) then {
   _vehicleAA pushBack "I_Tura_Truck_02_aa_lxWS";
   _staticAA pushBack "I_Tura_ZU23_lxWS";
