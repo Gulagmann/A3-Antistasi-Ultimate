@@ -41,7 +41,7 @@ class Templates
 
     class CISEF_Pacific : CISEF_Base
     {
-        file = "CISEF_Reb_Pacific";
+        file = "CISEF";
         climate[] = {"tropical"};
         side = "Reb";
         name = "CISEF";

@@ -12,6 +12,7 @@
 	//Static AA//
 	["vn_o_nva_navy_static_zpu4", ["rebCost", 500]],
 	["Vn_o_nva_static_zgu1_01", ["rebCost", 200]],
+	["vn_o_nva_navy_static_v11m", ["rebCost", 800]],
 	//Static AT//
 	["vn_o_vc_static_d44", ["rebCost", 500]],
 	["vn_o_nva_navy_static_type56rr", ["rebCost", 500]],
@@ -21,11 +22,18 @@
 	//Gunboat//
 	["vn_o_boat_04_02", ["rebCost", 1000]],
 	//Artillery//
-	["B_MBT_01_mlrs_F", ["rebCost", 4500]],
+	["O_G_Pickup_mrl_rf", ["rebCost", 3000]],
+	["O_SFIA_Truck_02_MRL_lxWS", ["rebCost", 4000]],
 	//Mobile AA//
 	["vn_o_wheeled_btr40_mg_03_nva65", ["rebCost", 1000]],
-	["B_ION_Pickup_aat_rf", ["rebCost", 2500]]
+	["B_ION_Pickup_aat_rf", ["rebCost", 2500]],
 	//Mobile AT//
 	
+	//Truck//
+	["CISEF_Car_Typhoon_Flat_Pacific", ["rebCost", 300]]
+
+	//Radar + guaided missile//
+	// ["vn_sa2", ["rebCost", 3000]], //
+	// ["Vn_o_static_rsna75", ["rebCost", 5000]] //
 
 ]] call _fnc_saveToTemplate;

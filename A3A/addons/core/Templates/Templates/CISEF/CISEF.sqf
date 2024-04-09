@@ -16,9 +16,9 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["vehiclesBasic", ["vn_o_bicycle_01_nva65","I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_static_zgu1_01","CISEF_Car_Offroad_Pacific"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F","CISEF_Car_Dagor_M2_Pacific"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
-["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F","CISEF_Car_Dagor_Metis_Pacific","vn_b_armor_m41_01_01"]] call _fnc_saveToTemplate;
-private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65","B_ION_Pickup_aat_rf","B_MBT_01_mlrs_F"];
+["vehiclesTruck", ["I_C_Van_01_transport_F","CISEF_Car_Typhoon_Flat_Pacific"]] call _fnc_saveToTemplate;
+["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F","CISEF_Car_Dagor_Metis_Pacific","vn_b_armor_m41_01_01","O_G_Pickup_mrl_rf","O_SFIA_Truck_02_MRL_lxWS"]] call _fnc_saveToTemplate;
+private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65","B_ION_Pickup_aat_rf"];
 
 ["vehiclesBoat", ["I_C_Boat_Transport_02_F","vn_o_boat_04_02"]] call _fnc_saveToTemplate;
 
@@ -31,7 +31,7 @@ private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65"
 
 ["staticMGs", ["CISEF_Trt_M2_high_Pacific","vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_static_AT_F","vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
-private _staticAA = ["I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4"];
+private _staticAA = ["I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4","vn_o_nva_navy_static_v11m"];
 ["staticMortars", ["I_G_Mortar_01_F","vn_o_nva_65_static_h12"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
@@ -74,7 +74,9 @@ private _shopCISEF =
         ["CISEF_Heli_Littlebird_Pacific", 5000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
         ["CISEF_Heli_Littlebird_Armed_Pacific", 12500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
         ["CISEF_Heli_Kasatka_Pacific", 17500, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
-        ["CISEF_Heli_Merlin_Pacific", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}]
+        ["CISEF_Heli_Merlin_Pacific", 20000, "HELI", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count airportsX > 0}],
+        ["vn_sa2", 3000, "ROCKET", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}],
+        ["Vn_o_static_rsna75", 5000, "RADAR", {{sidesX getVariable [_x,sideUnknown] isEqualTo teamPlayer} count seaports > 0}]
     ];
 
 private _shopWs = if (_hasWs) then {
@@ -87,7 +89,7 @@ private _shopWs = if (_hasWs) then {
         ["vn_b_armor_m67_01_01", 6000, "Medium Tank", {tierWar > 3}],
         ["vn_b_armor_m48_01_01", 5500, "Medium Flame Tank", {tierWar > 3}],
         ["vn_i_armor_type63_01", 5500, "Light Tank", {tierWar > 3}],
-        ["B_MBT_01_mlrs_F", 15000, "Artillery", {tierWar > 8}],
+        ["B_MBT_01_mlrs_F", 10000, "Artillery", {tierWar > 8}],
         ["vn_o_air_mig19_at", 6000, "Jet", {tierWar > 5}],
         ["vn_o_air_mig21_at", 8000, "Jet", {tierWar > 7}],
         ["a3a_Plane_Fighter_03_grey_F", 8000, "Jet", {tierWar > 7}],
