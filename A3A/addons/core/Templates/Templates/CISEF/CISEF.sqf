@@ -14,9 +14,9 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagMarkerType", "CISEF_Marker_CISEF"] call _fnc_saveToTemplate;
 
 ["vehiclesBasic", ["vn_o_bicycle_01_nva65","I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_static_zgu1_01","CISEF_Car_Offroad_Pacific"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_static_zgu1_01","CISEF_Car_Offroad_Pacific","CISEF_Car_Typhoon_Flat_Pacific"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F","CISEF_Car_Dagor_M2_Pacific"]] call _fnc_saveToTemplate;
-["vehiclesTruck", ["I_C_Van_01_transport_F","CISEF_Car_Typhoon_Flat_Pacific"]] call _fnc_saveToTemplate;
+["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
 ["vehiclesAT", ["I_G_Offroad_01_AT_F", "I_C_Offroad_02_AT_F","CISEF_Car_Dagor_Metis_Pacific","vn_b_armor_m41_01_01","O_G_Pickup_mrl_rf","O_SFIA_Truck_02_MRL_lxWS"]] call _fnc_saveToTemplate;
 private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65","B_ION_Pickup_aat_rf"];
 
