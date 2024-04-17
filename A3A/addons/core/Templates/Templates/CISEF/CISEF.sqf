@@ -13,7 +13,7 @@ private _hasContact = "enoch" in A3A_enabledDLC;
 ["flagTexture", "\cisef_core\data\Flag_CISEF.paa"] call _fnc_saveToTemplate;
 ["flagMarkerType", "CISEF_Marker_CISEF"] call _fnc_saveToTemplate;
 
-["vehiclesBasic", ["vn_o_bicycle_01_nva65","I_G_Quadbike_01_F"]] call _fnc_saveToTemplate;
+["vehiclesBasic", ["I_G_Quadbike_01_F","vn_o_bicycle_01_nva65"]] call _fnc_saveToTemplate;
 ["vehiclesLightUnarmed", ["I_G_Offroad_01_F", "I_C_Offroad_02_unarmed_F","Vn_o_nva_static_zgu1_01","CISEF_Car_Offroad_Pacific","CISEF_Car_Typhoon_Flat_Pacific"]] call _fnc_saveToTemplate;
 ["vehiclesLightArmed", ["I_C_Offroad_02_LMG_F", "I_G_Offroad_01_armed_F","CISEF_Car_Dagor_M2_Pacific"]] call _fnc_saveToTemplate;
 ["vehiclesTruck", ["I_C_Van_01_transport_F"]] call _fnc_saveToTemplate;
@@ -31,7 +31,7 @@ private _vehicleAA = ["I_Tura_Truck_02_aa_lxWS","vn_o_wheeled_btr40_mg_03_nva65"
 
 ["staticMGs", ["CISEF_Trt_M2_high_Pacific","vn_o_vc_static_dshkm_high_01","vn_o_vc_static_dshkm_low_02","vn_o_vc_static_dshkm_low_01","vn_o_vc_static_mg42_low","vn_o_vc_static_mg42_high"]] call _fnc_saveToTemplate;
 ["staticAT", ["I_static_AT_F","vn_o_vc_static_d44","vn_o_nva_navy_static_type56rr","vn_b_army_static_m101_02"]] call _fnc_saveToTemplate;
-private _staticAA = ["I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4","vn_o_nva_navy_static_v11m"];
+private _staticAA = ["I_static_AA_F","I_Tura_ZU23_lxWS","vn_o_nva_navy_static_zpu4","vn_o_nva_navy_static_v11m"];
 ["staticMortars", ["I_G_Mortar_01_F","vn_o_nva_65_static_h12"]] call _fnc_saveToTemplate;
 ["staticMortarMagHE", "8Rnd_82mm_Mo_shells"] call _fnc_saveToTemplate;
 ["staticMortarMagSmoke", "8Rnd_82mm_Mo_Smoke_white"] call _fnc_saveToTemplate;
