@@ -13,7 +13,7 @@
 	["vn_o_nva_navy_static_zpu4", ["rebCost", 500]],
 	["Vn_o_nva_static_zgu1_01", ["rebCost", 200]],
 	["vn_o_nva_navy_static_v11m", ["rebCost", 800]],
-	["I_static_AA_F", ["rebCost", 1100]],
+	["O_static_AA_F", ["rebCost", 1100]],
 	//Static AT//
 	["vn_o_vc_static_d44", ["rebCost", 500]],
 	["vn_o_nva_navy_static_type56rr", ["rebCost", 500]],
